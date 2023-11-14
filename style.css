@@ -1,0 +1,158 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif; 
+}
+#header{
+  position:static;
+  box-shadow: .2px .2px .2px .2px rgb(39, 39, 39);
+  border-radius: 0 0 2px 2px;
+  padding: .5rem;
+}
+nav{
+  background-color:  rgb(251, 251, 251);
+}
+#navBarSection{
+  padding: 0 12.5rem;
+}
+#navbarNavAltMarkup{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 33rem;
+}
+.logoSocialMedia{
+  width: 5rem;  
+}
+#logoInsta{
+  width: 5rem;
+}
+#logoLuhan{
+  height: 45px;
+}
+#card-principal{
+  display: flex;
+  justify-content: center;
+}
+.card{
+  width: 17rem;
+}
+.card:hover{
+  width: 16.8rem;
+  transition: .2s;
+}
+#cards{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 2.5rem 9rem ;
+  gap: 2rem;
+}
+body{
+  background-color: beige;
+  width: 100%;
+}
+main{
+  margin: 2vh 10vh 10vh;
+}
+main img{
+  width: 75%;
+}
+#carouselExampleIndicators{
+  width: 99vw;
+  margin: 0;
+  padding: 0;
+}
+.ex{
+  display: flex;
+  justify-content: space-evenly;
+  background-color: white;
+  height: 10%;
+  padding-bottom: 5rem;
+}
+.video {
+  border: solid black 0.1px;
+  width: 50% ;
+  margin-top: 5rem;
+}
+.video video{
+  width: 100%;
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+}
+#aboutVideo{
+  border: solid black 0.1px;
+  padding: 7rem;
+  border-radius: 5px;
+  box-shadow: slategray 2px 2px;
+  background-color:rgb(249, 239, 222);
+}
+#aboutForm{
+  border: solid black 0.1px;
+  margin-top: 20rem;
+  padding:7rem;
+  border-radius: 5px;
+  box-shadow: slategray 2px 2px;
+  background-color:rgb(249, 239, 222);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+footer{
+  position:relative;
+  bottom: 0;
+  width: 100%;
+  background-color: antiquewhite;
+  color: black;
+  padding: 1rem;
+  flex-direction: column;
+  box-shadow: 0px 0px 0px 1px gray;
+  display: flex;
+}
+footer section article{
+  text-align:center;
+}
+footer a, footer a:hover{
+  color: black;
+  text-decoration: none;
+  margin: 0 auto;
+}
+footer section img{
+  width: 5rem;
+  padding: 0 1rem 1rem;
+  border-radius: 10%;
+  margin-top:0.3rem;
+}
+footer section img:hover{
+  width: 5.1rem;
+  transition: .5s;
+}
+#foot, #socialMedia{
+  display: flex;
+  justify-content: space-around;
+  align-items:baseline;
+  margin: 6rem;
+}
+#foot p{
+  color:gray;
+  font-size: .9rem;
+}
+#foot h4{
+  font-size: 1.2rem;
+}
+#foot p:hover{
+  color:tan;
+}
+
+form{
+  width: 25rem;
+  text-align:center;
+  font-size: 18px;
+  padding: 1rem;
+  border-radius: 4px;
+  box-shadow: .2px .2px .2px .2px rgb(39, 39, 39);
+  margin: 5rem auto;
+  border: solid 1px black;
+}
