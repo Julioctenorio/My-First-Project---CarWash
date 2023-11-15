@@ -4,15 +4,11 @@
   font-family: sans-serif; 
 }
 #header{
-  position:static;
-  box-shadow: .2px .2px .2px .2px rgb(39, 39, 39);
-  border-radius: 0 0 2px 2px;
   padding: .5rem;
-}
-nav{
-  background-color:  rgb(251, 251, 251);
+  background: linear-gradient(90deg, hsla(0, 0%, 0%, 1) 28%, hsla(210, 10%, 25%, 1) 100%);
 }
 #navBarSection{
+  background: linear-gradient(90deg, hsla(0, 0%, 0%, 1) 28%, hsla(210, 10%, 25%, 1) 100%);
   padding: 0 12.5rem;
 }
 #navbarNavAltMarkup{
@@ -27,33 +23,78 @@ nav{
 #logoInsta{
   width: 5rem;
 }
+#logoInsta:hover{
+  width: 5.1rem;
+  transition: .5s;
+}
 #logoLuhan{
   height: 45px;
 }
-#card-principal{
-  display: flex;
+#card-principal, #card-secondary{
+  display:flex;
+  flex-direction:row;
   justify-content: center;
+  align-items:center;
+  margin-top: 4rem;
+}
+#card-secondary{
+  flex-direction: row-reverse;
+  background-image: url(https://static.vecteezy.com/ti/vetor-gratis/p2/2082471-black-and-grey-modern-material-design-overlapped-layers-background-corporate-template-for-your-business-vector-abstract-widescreen-background-vetor.jpg);
+  border-radius: 5px;
+}
+#card-principal #services{
+  width: 60%;
+  margin: 2rem 2rem 0;
+  letter-spacing: 1px;
+}
+#card-secondary #services{
+  margin: 2rem 0rem 0;
+  letter-spacing: 1px;
+  
+}
+#servicesTwo{
+  width: 40%;
+  margin: 2rem 0 ;
+}
+#services h6, #servicesTwo h6{
+  color:rgb(0, 254, 8);
+}
+#services h4, #servicesTwo h4{
+  font-size: 3rem;
+  font-weight: bold;
+}
+#servicesTwo h4, #servicesTwo p{
+  color: rgb(236, 236, 236);
+}
+#card-img-top{
+  width: 100%;
+  border-radius: 5px;
+}
+#card-img-down{
+  width: 85%;
+  border-radius: 5px;
 }
 .card{
-  width: 17rem;
+  width: 27.4rem;
 }
 .card:hover{
-  width: 16.8rem;
+  width: 28rem;
   transition: .2s;
+  backdrop-filter: opacity(20px);
 }
 #cards{
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin: 2.5rem 9rem ;
-  gap: 2rem;
+  margin: 4rem auto 1rem ;
+  gap: 2rem; 
 }
 body{
   background-color: beige;
   width: 100%;
 }
 main{
-  margin: 2vh 10vh 10vh;
+  margin: 2vh 5vh 10vh;
 }
 main img{
   width: 75%;
@@ -104,7 +145,7 @@ footer{
   position:relative;
   bottom: 0;
   width: 100%;
-  background-color: antiquewhite;
+  background: linear-gradient(360deg, hsla(0, 0%, 0%, 1) 0%, hsla(206, 10%, 14%, 1) 15%, hsla(210, 14%, 95%, 1) 100%);
   color: black;
   padding: 1rem;
   flex-direction: column;
@@ -124,6 +165,7 @@ footer section img{
   padding: 0 1rem 1rem;
   border-radius: 10%;
   margin-top:0.3rem;
+  opacity: .86;
 }
 footer section img:hover{
   width: 5.1rem;
@@ -136,11 +178,12 @@ footer section img:hover{
   margin: 6rem;
 }
 #foot p{
-  color:gray;
+  color:rgb(216, 216, 216);
   font-size: .9rem;
 }
 #foot h4{
   font-size: 1.2rem;
+  color:rgb(61, 61, 61);
 }
 #foot p:hover{
   color:tan;
