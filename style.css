@@ -3,29 +3,32 @@
   margin: 0;
   font-family: sans-serif; 
 }
-#header{
-  padding: .5rem;
+header{
+  padding: 0 12.5rem;
   background: linear-gradient(90deg, hsla(0, 0%, 0%, 1) 28%, hsla(210, 10%, 25%, 1) 100%);
   position:fixed; 
-  z-index: 1000; 
+  z-index: 10000; 
   width: 100%;
   top: 0px;
-}
-#navBarSection{
-  background: linear-gradient(90deg, hsla(0, 0%, 0%, 1) 28%, hsla(210, 10%, 25%, 1) 100%);
-  padding: 0 12.5rem;
 }
 #navbarNavAltMarkup{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding-left: 33rem;
+  padding: 0 10rem 0 13rem;
 }
 .logoSocialMedia{
-  width: 5rem;  
+  width: 5rem;
+}
+.logoSocialMedia2{
+  width: 1.6rem;
 }
 #logoInsta{
   width: 5rem;
+}
+#logoInsta2{
+  width: 1.6rem;
+  margin: 0 .8rem;
 }
 #logoInsta:hover{
   width: 5.1rem;
@@ -39,12 +42,13 @@
   flex-direction:row;
   justify-content: center;
   align-items:center;
-  margin-top: 4rem;
+  margin-top: 6rem;
 }
 #card-secondary{
   flex-direction: row-reverse;
   background-image: url(https://static.vecteezy.com/ti/vetor-gratis/p2/2082471-black-and-grey-modern-material-design-overlapped-layers-background-corporate-template-for-your-business-vector-abstract-widescreen-background-vetor.jpg);
   border-radius: 5px;
+  height: 40rem;
 }
 #card-principal #services{
   width: 60%;
@@ -58,7 +62,7 @@
 }
 #servicesTwo{
   width: 40%;
-  margin: 2rem 0 ;
+  height: 60%;
 }
 #services h6, #servicesTwo h6{
   color:rgb(0, 254, 8);
@@ -95,18 +99,47 @@
 }
 body{
   background-color: beige;
-  width: 100%;
+  width: 99%;
 }
 main{
   margin: 2vh 5vh 10vh;
 }
-main img{
-  width: 75%;
+#imageDesfoc{
+  background-image: url(./img/card3.1.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 113.77%;
+  margin: 0 -10%;
+  height: 100vh;
+  filter: blur(5px);
+  box-shadow: 0 0 5px 0 black;
+}
+#imageDesfoc h1{
+  filter: blur(-5%);
+}
+.btn {
+  background-color: rgb(213, 213, 213);
+}
+.btn:hover{
+  background-color: rgb(168, 168, 168);
+  color: rgb(242, 242, 242);
+}
+#firstName, #surname, #contact, #date, #service, #exampleFormControlTextarea1{
+  background-color: rgb(245, 245, 245);
 }
 #carouselExampleIndicators{
-  width: 99vw;
+  width: 90%;
+  height: 100%;
   margin: 0;
-  padding: 0;
+  padding: 0 0 0 3rem;
+}
+#line{
+  width: 86.5rem;
+  height: 15px;
+  margin-top: 7rem;
+  border: solid 1px black;
+  border-radius: 10px;
+  background-color: rgb(93, 92, 92);
 }
 .ex{
   display: flex;
@@ -148,13 +181,16 @@ main img{
 footer{
   position:relative;
   bottom: 0;
-  width: 100%;
+  width: 101%;
   background: linear-gradient(360deg, hsla(0, 0%, 0%, 1) 0%, hsla(206, 10%, 14%, 1) 15%, hsla(210, 14%, 95%, 1) 100%);
   color: black;
   padding: 1rem;
   flex-direction: column;
   box-shadow: 0px 0px 0px 1px gray;
   display: flex;
+  bottom: 0px;
+  left: 0;
+  right: 0;
 }
 footer section article{
   text-align:center;
@@ -200,6 +236,6 @@ form{
   padding: 1rem;
   border-radius: 4px;
   box-shadow: .2px .2px .2px .2px rgb(39, 39, 39);
-  margin: 5rem auto;
+  margin: 7rem auto 5rem;
   border: solid 1px black;
 }
