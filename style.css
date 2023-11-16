@@ -6,6 +6,10 @@
 #header{
   padding: .5rem;
   background: linear-gradient(90deg, hsla(0, 0%, 0%, 1) 28%, hsla(210, 10%, 25%, 1) 100%);
+  position:fixed; 
+  z-index: 1000; 
+  width: 100%;
+  top: 0px;
 }
 #navBarSection{
   background: linear-gradient(90deg, hsla(0, 0%, 0%, 1) 28%, hsla(210, 10%, 25%, 1) 100%);
