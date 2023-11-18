@@ -1,187 +1,46 @@
-*{
+* {
   padding: 0;
   margin: 0;
-  font-family: sans-serif; 
+  font-family: sans-serif;
 }
-header{
-  padding: 0 12.5rem;
-  background: linear-gradient(90deg, hsla(0, 0%, 0%, 1) 28%, hsla(210, 10%, 25%, 1) 100%);
-  position:fixed; 
-  z-index: 10000; 
-  width: 100%;
-  top: 0px;
+
+html {
+  scroll-behavior: smooth;
 }
-#navbarNavAltMarkup{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 0 10rem 0 13rem;
-}
-.logoSocialMedia{
-  width: 5rem;
-}
-.logoSocialMedia2{
-  width: 1.6rem;
-}
-#logoInsta{
-  width: 5rem;
-}
-#logoInsta2{
-  width: 1.6rem;
-  margin: 0 .8rem;
-}
-#logoInsta:hover{
-  width: 5.1rem;
-  transition: .5s;
-}
-#logoLuhan{
-  height: 45px;
-}
-#card-principal, #card-secondary{
-  display:flex;
-  flex-direction:row;
-  justify-content: center;
-  align-items:center;
-  margin-top: 6rem;
-}
-#card-secondary{
-  flex-direction: row-reverse;
-  background-image: url(https://static.vecteezy.com/ti/vetor-gratis/p2/2082471-black-and-grey-modern-material-design-overlapped-layers-background-corporate-template-for-your-business-vector-abstract-widescreen-background-vetor.jpg);
-  border-radius: 5px;
-  height: 40rem;
-}
-#card-principal #services{
-  width: 60%;
-  margin: 2rem 2rem 0;
-  letter-spacing: 1px;
-}
-#card-secondary #services{
-  margin: 2rem 0rem 0;
-  letter-spacing: 1px;
-  
-}
-#servicesTwo{
-  width: 40%;
-  height: 60%;
-}
-#services h6, #servicesTwo h6{
-  color:rgb(0, 254, 8);
-}
-#services h4, #servicesTwo h4{
-  font-size: 3rem;
-  font-weight: bold;
-}
-#servicesTwo h4, #servicesTwo p{
-  color: rgb(236, 236, 236);
-}
-#card-img-top{
-  width: 100%;
-  border-radius: 5px;
-}
-#card-img-down{
-  width: 85%;
-  border-radius: 5px;
-}
-.card{
-  width: 27.4rem;
-}
-.card:hover{
-  width: 28rem;
-  transition: .2s;
-  backdrop-filter: opacity(20px);
-}
-#cards{
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  margin: 4rem auto 1rem ;
-  gap: 2rem; 
-}
-body{
+
+body {
   background-color: beige;
   width: 99%;
 }
-main{
+
+main {
   margin: 2vh 5vh 10vh;
 }
-#imageDesfoc{
-  background-image: url(./img/card3.1.jpg);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  width: 113.77%;
-  margin: 0 -10%;
-  height: 100vh;
-  filter: blur(5px);
-  box-shadow: 0 0 5px 0 black;
-}
-#imageDesfoc h1{
-  filter: blur(-5%);
-}
-.btn {
-  background-color: rgb(213, 213, 213);
-}
-.btn:hover{
-  background-color: rgb(168, 168, 168);
-  color: rgb(242, 242, 242);
-}
-#firstName, #surname, #contact, #date, #service, #exampleFormControlTextarea1{
-  background-color: rgb(245, 245, 245);
-}
-#carouselExampleIndicators{
-  width: 90%;
-  height: 100%;
-  margin: 0;
-  padding: 0 0 0 3rem;
-}
-#line{
-  width: 86.5rem;
-  height: 15px;
-  margin-top: 7rem;
-  border: solid 1px black;
-  border-radius: 10px;
-  background-color: rgb(93, 92, 92);
-}
-.ex{
-  display: flex;
-  justify-content: space-evenly;
-  background-color: white;
-  height: 10%;
-  padding-bottom: 5rem;
-}
-.video {
-  border: solid black 0.1px;
-  width: 50% ;
-  margin-top: 5rem;
-}
-.video video{
+
+header {
+  padding: 0 12.3rem;
+  background: linear-gradient(90deg, hsla(0, 0%, 0%, 1) 28%, hsla(210, 10%, 25%, 1) 100%);
+  position: fixed;
+  z-index: 10000;
   width: 100%;
-  object-fit: cover;
-  display: flex;
-  align-items: center;
+  top: 0px;
 }
-#aboutVideo{
-  border: solid black 0.1px;
-  padding: 7rem;
-  border-radius: 5px;
-  box-shadow: slategray 2px 2px;
-  background-color:rgb(249, 239, 222);
+
+form {
+  width: 25rem;
+  text-align: center;
+  font-size: 18px;
+  padding: 1rem;
+  border-radius: 4px;
+  box-shadow: .2px .2px .2px .2px rgb(39, 39, 39);
+  margin: 7rem auto 5rem;
+  border: solid 1px black;
 }
-#aboutForm{
-  border: solid black 0.1px;
-  margin-top: 20rem;
-  padding:7rem;
-  border-radius: 5px;
-  box-shadow: slategray 2px 2px;
-  background-color:rgb(249, 239, 222);
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-}
-footer{
-  position:relative;
+
+footer {
+  position: relative;
   bottom: 0;
-  width: 101%;
+  width: 101.03%;
   background: linear-gradient(360deg, hsla(0, 0%, 0%, 1) 0%, hsla(206, 10%, 14%, 1) 15%, hsla(210, 14%, 95%, 1) 100%);
   color: black;
   padding: 1rem;
@@ -192,50 +51,243 @@ footer{
   left: 0;
   right: 0;
 }
-footer section article{
-  text-align:center;
+
+footer section article {
+  text-align: center;
 }
-footer a, footer a:hover{
+
+footer a,
+footer a:hover {
   color: black;
   text-decoration: none;
   margin: 0 auto;
 }
-footer section img{
+
+footer section img {
   width: 5rem;
   padding: 0 1rem 1rem;
   border-radius: 10%;
-  margin-top:0.3rem;
+  margin-top: 0.3rem;
   opacity: .86;
 }
-footer section img:hover{
+
+footer section img:hover {
   width: 5.1rem;
   transition: .5s;
 }
-#foot, #socialMedia{
+
+
+#navbarNavAltMarkup {
   display: flex;
   justify-content: space-around;
-  align-items:baseline;
-  margin: 6rem;
-}
-#foot p{
-  color:rgb(216, 216, 216);
-  font-size: .9rem;
-}
-#foot h4{
-  font-size: 1.2rem;
-  color:rgb(61, 61, 61);
-}
-#foot p:hover{
-  color:tan;
+  align-items: center;
+  padding: 0 10rem 0 13rem;
 }
 
-form{
-  width: 25rem;
-  text-align:center;
-  font-size: 18px;
-  padding: 1rem;
-  border-radius: 4px;
-  box-shadow: .2px .2px .2px .2px rgb(39, 39, 39);
-  margin: 7rem auto 5rem;
+
+#logoInsta {
+  width: 5rem;
+}
+
+#logoInsta2 {
+  width: 1.6rem;
+  margin: 0 .8rem;
+}
+
+#logoInsta:hover {
+  width: 5.1rem;
+  transition: .5s;
+}
+
+#logoLuhan {
+  height: 45px;
+}
+
+#card-principal,
+#card-secondary {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6rem;
+}
+
+#card-secondary {
+  flex-direction: row-reverse;
+  background-image: url(https://static.vecteezy.com/ti/vetor-gratis/p2/2082471-black-and-grey-modern-material-design-overlapped-layers-background-corporate-template-for-your-business-vector-abstract-widescreen-background-vetor.jpg);
+  border-radius: 5px;
+  height: 40rem;
+}
+
+#card-principal #services {
+  width: 60%;
+  margin: 2rem 2rem 0;
+  letter-spacing: 1px;
+}
+
+#card-secondary #services {
+  margin: 2rem 0rem 0;
+  letter-spacing: 1px;
+
+}
+
+#servicesTwo {
+  width: 40%;
+  height: 75%;
+  padding-right: 2rem;
+}
+
+#services h6,
+#servicesTwo h6 {
+  color: rgb(0, 254, 8);
+}
+
+#services h4,
+#servicesTwo h4 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+#servicesTwo h4,
+#servicesTwo p {
+  color: rgb(236, 236, 236);
+}
+
+#cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 4rem auto 1rem;
+  gap: 2rem;
+}
+
+#card-img-top {
+  width: 100%;
+  border-radius: 5px;
+}
+
+#card-img-down {
+  width: 85%;
+  border-radius: 5px;
+}
+
+#imageDesfoc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#imageDesfoc img {
+  background-image: url(./img/card3.1.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 107.55%;
+  margin: 0 -10%;
+  height: 100vh;
+  filter: blur(5px);
+  box-shadow: 0 0 5px 0 black;
+  position: relative;
+}
+
+#imageDesfoc h1 {
+  position: absolute;
+  font-family: 'Philosopher', sans-serif;
+  color: #FFF;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000;
+}
+
+#firstName,
+#surname,
+#contact,
+#date,
+#service,
+#exampleFormControlTextarea1 {
+  background-color: rgb(245, 245, 245);
+}
+
+#carouselExampleIndicators {
+  width: 90%;
+  height: 100%;
+  margin: 0;
+  padding: 0 0 0 3rem;
+}
+
+#localizationForm {
+  width: 86.5rem;
+  height: 15px;
+  margin-top: 7rem;
   border: solid 1px black;
+  border-radius: 10px;
+  background-color: rgb(93, 92, 92);
+}
+
+#aboutForm {
+  border: solid black 0.1px;
+  margin-top: 20rem;
+  padding: 7rem;
+  border-radius: 5px;
+  box-shadow: slategray 2px 2px;
+  background-color: rgb(249, 239, 222);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#foot,
+#socialMedia {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  margin: 6rem;
+}
+
+#foot p {
+  color: rgb(216, 216, 216);
+  font-size: .9rem;
+}
+
+#foot h4 {
+  font-size: 1.2rem;
+  color: rgb(61, 61, 61);
+}
+
+#foot p:hover {
+  color: tan;
+}
+
+.card {
+  width: 27.4rem;
+}
+
+.card:hover {
+  width: 28rem;
+  transition: .2s;
+  backdrop-filter: opacity(20px);
+}
+
+.logoSocialMedia {
+  width: 5rem;
+}
+
+.logoSocialMedia2 {
+  width: 1.6rem;
+}
+
+.btn {
+  background-color: rgb(213, 213, 213);
+}
+
+.btn:hover {
+  background-color: rgb(168, 168, 168);
+  color: rgb(242, 242, 242);
+}
+
+.ex {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: white;
+  height: 10%;
+  padding-bottom: 5rem;
 }
