@@ -76,7 +76,7 @@ footer section img:hover {
   transition: .5s;
 }
 
-#navbarNavAltMarkup {
+#navbarNav {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -98,6 +98,9 @@ footer section img:hover {
 
 #logoLuhan {
   height: 45px;
+}
+#slogan{
+  margin-bottom: 4rem;
 }
 
 #card-principal,
@@ -183,7 +186,7 @@ footer section img:hover {
 }
 
 #imageDesfoc h1 {
-  margin-top: 5rem;
+  margin-top: 3rem;
   position: absolute;
   font-size: 1.8rem;
   padding: 0 0 10rem 0;
@@ -197,6 +200,10 @@ footer section img:hover {
   display: flex;
   text-align: center;
   padding: 1rem;
+}
+
+#buttonTop a{
+  margin-top: 2rem;
 }
 
 #buttonTop button {
@@ -230,7 +237,7 @@ footer section img:hover {
 }
 
 #localizationForm {
-  width: 86.5rem;
+  width: 97rem;
   height: 15px;
   margin-top: 7rem;
   border: solid 1px black;
@@ -251,8 +258,7 @@ footer section img:hover {
   align-items: center;
 }
 
-#foot,
-#socialMedia {
+#foot{
   display: flex;
   justify-content: space-around;
   align-items: baseline;
@@ -283,10 +289,6 @@ footer section img:hover {
   backdrop-filter: opacity(20px);
 }
 
-.logoSocialMedia {
-  width: 5rem;
-}
-
 .logoSocialMedia2 {
   width: 1.6rem;
 }
@@ -309,7 +311,7 @@ footer section img:hover {
 }
 
 /* Mobile */
-@media(max-width: 480px) {
+@media (min-width: 320px) and(max-width: 480px) {
   body{
     width: 354%;
     padding:  0;
@@ -327,38 +329,655 @@ footer section img:hover {
     position: fixed;
   }
   footer{
-    width: 107.5%;
+    width: 107.6%;
   }
   #header{
     width: 100%;
     padding: 0;
     margin: 0;
   }
-  #navbarNavAltMarkup {
+  #navbarNav {
+    top: 0px;
     display: flex;
     justify-content: space-around;
+    flex-direction:row;
     align-items: center;
     padding: 1rem;
+    width: 50rem;
   }
-  .navbar-collapse collapse show #navbarNavAltMarkup{
-    height: 5px;
+  #imageDesfoc h1{
+    font-size: 3.8rem;
+    letter-spacing: .3rem;
+    padding: 0rem;
+    width: 250%;
+    text-align: center;
+  }
+  #imageDesfoc button{
+    width: 15rem;
+    padding: 1.5rem;
+    border-radius: 10px;
+    font-size: 2.2rem;
+  }
+  .navbar-nav{
+    display: inline-flex;
+    font-size: 2rem;
   }
   #localizationForm {
     width: 83rem;
   }
+  #card-principal{
+    margin-bottom: 10rem;
+  }
+  #card-principal h4{
+    font-size: 4rem;
+  }
+  #card-principal h6{
+    font-size: 2.5rem;
+  }
+  #card-principal p{
+    font-size: 2rem;
+  }
+  #card-secondary{
+    width: 84rem;
+    margin: 0 auto;
+  }
+  #cards p {
+    font-size: 3rem;
+  }
+  #services, #cards{
+    padding-bottom: 5rem;
+  }
+  #servicesTwo{
+    width: 25rem;
+  }
+  #servicesTwo h4{
+    font-size: 3rem;
+    letter-spacing: .32rem;
+  }
+  #servicesTwo h6 {
+    font-size: 1.8rem;
+    letter-spacing: .07rem;
+  }
+  #servicesTwo p{
+    display: none;
+  }
+  #localizationForm{
+    margin: 15rem auto;
+  }
+  form{
+    width: 70rem;
+    font-size: 70px;
+    padding: 3rem;
+    border-radius: 8px;
+    margin: 7rem auto;
+  }
+  .form-row input, .form-group input, .form-group select, .form-group textarea{
+    height: calc(5rem + 10px);
+    font-size: 3rem;
+    line-height: 2rem;
+    padding: .4rem .1rem;
+  }
+  #form1 button{
+    width: 18rem;
+    height: 7rem;
+    margin-top: 2rem;
+    font-size: 3rem;
+  }
+  
 }
 
 /* Extra small devices */
-@media(min-width: 481px) and (max-width: 767px) {}
+@media(min-width: 481px) and (max-width: 767px) {
+  body{
+    width: 354%;
+    padding:  0;
+    margin: 0;
+    right: 0;
+  }
+  main{
+    width: 99.8%;
+    padding-top: 11rem;
+    margin: 2vh 7vh 10vh;
+  }
+  header{
+    padding: 0rem;
+    margin: 0;
+    position: fixed;
+  }
+  footer{
+    width: 107.6%;
+  }
+  #header{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  #navbarNav {
+    top: 0px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction:row;
+    align-items: center;
+    padding: 1rem;
+    width: 50rem;
+  }
+  #imageDesfoc h1{
+    font-size: 3.8rem;
+    letter-spacing: .3rem;
+    padding: 0rem;
+    width: 250%;
+    text-align: center;
+  }
+  #imageDesfoc img{
+    width: 109.7%;
+  }
+  #imageDesfoc button{
+    width: 15rem;
+    padding: 1.5rem;
+    border-radius: 10px;
+    font-size: 2.2rem;
+  }
+  .navbar-nav{
+    display: inline-flex;
+    font-size: 2rem;
+  }
+  #localizationForm {
+    width: 100rem;
+    margin: 15rem auto;
+  }
+  #card-principal{
+    margin-bottom: 10rem;
+  }
+  #card-principal h4{
+    font-size: 4rem;
+  }
+  #card-principal h6{
+    font-size: 2.5rem;
+  }
+  #card-principal p{
+    font-size: 2rem;
+  }
+  #card-secondary{
+    width: 100rem;
+    height: 50rem;
+    margin: 0 auto;
+  }
+  #cards p {
+    font-size: 3rem;
+  }
+  #services, #cards{
+    padding-bottom: 5rem;
+  }
+  #servicesTwo{
+    width: 25rem;
+    padding-top: 3rem;
+  }
+  #servicesTwo h4{
+    font-size: 3rem;
+    letter-spacing: .32rem;
+  }
+  #servicesTwo h6 {
+    font-size: 1.8rem;
+    letter-spacing: .07rem;
+  }
+  #servicesTwo p{
+    display: none;
+  }
+  #carouselExampleIndicators{
+    width: 95%;
+  }
+
+  form{
+    width: 70rem;
+    font-size: 70px;
+    padding: 3rem;
+    border-radius: 8px;
+    margin: 7rem auto;
+  }
+  .form-row input, .form-group input, .form-group select, .form-group textarea{
+    height: calc(5rem + 10px);
+    font-size: 3rem;
+    line-height: 2rem;
+    padding: .4rem .1rem;
+  }
+  #form1 button{
+    width: 18rem;
+    height: 7rem;
+    margin-top: 2rem;
+    font-size: 3rem;
+  }
+}
 
 /* Small tablets */
-@media(min-width: 768px) and (max-width: 991px) {}
+@media(min-width: 768px) and (max-width: 991px) {
+  body{
+    width: 372%;
+    padding:  0;
+    margin: 0;
+    right: 0;
+  }
+  main{
+    width: 99.8%;
+    padding-top: 11rem;
+    margin: 2vh 7vh 10vh;
+  }
+  header{
+    padding: 0rem;
+    margin: 0;
+    position: fixed;
+  }
+  footer{
+    width: 107.6%;
+  }
+  #header{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  #navbar-brand img{
+    width: 6rem;
+    height: 6rem;
+    margin-left: 4rem;
+  }
+  #socialMedia img{
+    width: 3rem;
+    height: 3rem;
+    margin-right: 2rem;
+  }
+  #navbarNav {
+    top: 0px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction:row;
+    align-items: center;
+    padding: 4rem;
+    width: 50rem;
+  }
+  #imageDesfoc{
+    width: 101%;
+  }
+  #imageDesfoc h1{
+    font-size: 3.2rem;
+    letter-spacing: .3rem;
+    padding: 0rem;
+    width: 100%;
+    text-align: center;
+  }
+  #imageDesfoc img{
+    width: 110%;
+    height: 90rem;
+    margin-top: 0px;
+    padding-top: 0px;
+  }
+  #imageDesfoc button{
+    width: 15rem;
+    padding: 2rem;
+    margin-top: 5rem;
+    border-radius: 10px;
+    font-size: 2.2rem;
+  }
+  #slogan{
+    margin-bottom: 8rem;
+  }
+  .navbar-nav{
+    display: inline-flex;
+    font-size: 2rem;
+  }
+  
+
+
+
+
+  #localizationForm {
+    width: 175rem;
+    margin: 15rem auto;
+  }
+  #card-principal{
+    margin-bottom: 10rem;
+  }
+  #card-principal h4{
+    font-size: 4rem;
+  }
+  #card-principal h6{
+    font-size: 2.5rem;
+  }
+  #card-principal p{
+    font-size: 2rem;
+  }
+  #card-secondary{
+    width: 176rem;
+    height: 90rem;
+    margin: 10rem auto 0;
+    background-size: 100%;
+    padding-right: 35rem;
+  }
+  #cards p {
+    font-size: 3rem;
+  }
+  #cards{
+    height: 50rem;
+    margin-top: 15rem;
+  }
+  .card{
+    width: 55rem;
+  }
+  #services h6{
+    font-size: 3rem;
+  }
+  #services h4{
+    font-size: 6rem;
+  }
+  #services P{
+    font-size: 2.5rem;
+  }
+  #services, #cards{
+    padding-bottom: 5rem;
+  }
+  #servicesTwo{
+    width: 50rem;
+    padding-top: 3rem;
+    padding-left: 50rem;
+  }
+  #servicesTwo h4{
+    font-size: 4.3rem;
+    letter-spacing: .42rem;
+    margin-top: 2rem;
+  }
+  #servicesTwo h6 {
+    font-size: 2.8rem;
+    letter-spacing: .2rem;
+  }
+  #servicesTwo p{
+    display: none;
+  }
+  #carouselExampleIndicators{
+    width: 170%;
+    padding: 2rem;
+  }
+
+  form{
+    width: 80rem;
+    font-size: 70px;
+    padding: 3rem;
+    border-radius: 8px;
+    margin: 7rem auto 15rem;
+  }
+  .form-row input, .form-group input, .form-group select, .form-group textarea{
+    height: calc(7rem + 10px);
+    font-size: 3rem;
+    line-height: 2rem;
+    padding: .4rem .1rem;
+  }
+  #form1 button{
+    width: 18rem;
+    height: 7rem;
+    margin-top: 2rem;
+    font-size: 3rem;
+  }
+
+  footer #foot img{
+    height: 10rem;
+    width: 10rem;
+  }
+
+  footer #foot h4{
+    font-size: 3rem;
+  }
+
+  footer #foot p{
+    font-size: 1.8rem;
+  }
+}
 
 /* Large tablets/laptops*/
-@media(min-width: 992px) and (max-width: 1199px) {}
+@media(min-width: 992px) and (max-width: 1199px) {
+  body{
+    width: 265%;
+    margin-top: 0;
+    padding-top: 0;
+  }
+  main{
+    width: 99.8%;
+    padding-top: 11rem;
+    margin: 2vh 7vh 10vh;
+  }
+  header{
+    padding: 0rem;
+    margin: 0;
+    position: fixed;
+  }
+  footer{
+    width: 108.5%;
+  }
+  #header{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  #navbarNav {
+    top: 0px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction:row;
+    align-items: center;
+    padding: 4rem;
+    width: 50rem;
+  }
+  #imageDesfoc{
+    width: 101.3%;
+  }
+  #imageDesfoc h1{
+    font-size: 3.2rem;
+    letter-spacing: .3rem;
+    padding: 0rem;
+    width: 100%;
+    text-align: center;
+  }
+  #imageDesfoc img{
+    width: 110%;
+    height: 90rem;
+    margin-top: 0px;
+    padding-top: 0px;
+  }
+  #imageDesfoc button{
+    width: 15rem;
+    padding: 2rem;
+    margin-top: 5rem;
+    border-radius: 10px;
+    font-size: 2.2rem;
+  }
+  #slogan{
+    margin-bottom: 8rem;
+  }
+  .navbar-nav{
+    display: inline-flex;
+    font-size: 2rem;
+  }
+  .logoSocialMedia2, #logoInsta2, #fb-logo{
+    width: 3.5rem;
+    margin-right: 2rem;
+  }
+
+  #navbar-brand img{
+    margin-left: 5rem;
+    width: 5.5rem;
+    height: 5.5rem;
+  }
+  #localizationForm {
+    width: 169.5rem;
+    margin: 15rem auto;
+  }
+  #localizationMenuService{
+    padding-bottom: 5rem;
+  }
+  #card-principal{
+    margin-bottom: 10rem;
+    width: 168rem;
+  }
+  #card-principal h4{
+    font-size: 5rem;
+  }
+  #card-principal h6{
+    font-size: 4.5rem;
+  }
+  #card-principal p{
+    font-size: 2rem;
+  }
+  #card-secondary{
+    width: 170rem;
+    height: 90rem;
+    margin: 10rem auto 0;
+    background-size: 100%;
+    padding-right: 35rem;
+  }
+  #cards p {
+    font-size: 3rem;
+  }
+  #cards{
+    height: 50rem;
+    margin-top: 15rem;
+    margin-left: 2.5rem;
+    align-items: center;
+  }
+  .card{
+    width: 55rem;
+  }
+  #services h6{
+    font-size: 3rem;
+  }
+  #services h4{
+    font-size: 6rem;
+  }
+  #services P{
+    font-size: 2.5rem;
+  }
+  #services, #cards{
+    padding-bottom: 5rem;
+  }
+  #servicesTwo{
+    width: 50rem;
+    padding-top: 3rem;
+    padding-left: 50rem;
+  }
+  #servicesTwo h4{
+    font-size: 4.3rem;
+    letter-spacing: .42rem;
+    margin-top: 2rem;
+  }
+  #servicesTwo h6 {
+    font-size: 2.8rem;
+    letter-spacing: .2rem;
+  }
+  #servicesTwo p{
+    display: none;
+  }
+  #carouselExampleIndicators{
+    width: 170%;
+    padding: 2rem;
+  }
+
+  form{
+    width: 80rem;
+    font-size: 70px;
+    padding: 3rem;
+    border-radius: 8px;
+    margin: 7rem auto 15rem;
+  }
+  .form-row input, .form-group input, .form-group select, .form-group textarea{
+    height: calc(7rem + 10px);
+    font-size: 3rem;
+    line-height: 2rem;
+    padding: .4rem .1rem;
+  }
+  #form1 button{
+    width: 18rem;
+    height: 7rem;
+    margin-top: 2rem;
+    font-size: 3rem;
+  }
+
+  footer #foot img{
+    height: 8rem;
+    width: 8rem;
+  }
+
+  footer #foot h4{
+    font-size: 3rem;
+  }
+
+  footer #foot p{
+    font-size: 1.8rem;
+  }
+}
 
 /* Desktops */
-@media(min-width: 1200px) and (max-width: 1919px) {}
+@media(min-width: 1200px) and (max-width: 1919px) {
+  body{
+    width: 98.973%;
+  }
+  form{
+    width: 30rem;
+    font-size: 20px;
+    padding: 2rem;
+    border-radius: 8px;
+    margin: 7rem auto 15rem;
+  }
+  #cards{
+    width: 101.5%;
+    margin: 8rem 0 1rem;
+  }
+  #localizationMenuService{
+    padding-bottom: 1rem;
+  }
+}
 
 /* Extra large screens */
-@media(min-width: 1920px) {}
+@media(min-width: 1920px) {
+  body{
+    width: 100%;
+  }
+  .navbar-nav{
+    display: inline-flex;
+    font-size: 2rem;
+  }
+  .logoSocialMedia2, #logoInsta2, #fb-logo{
+    width: 2.5rem;
+    margin-right: 2rem;
+  }
+  #imageDesfoc{
+    width: 101.35%;
+  }
+  #card-secondary{
+    width: 112rem;
+    height: 50rem;
+    margin: 10rem auto 0;
+    background-size: 100%;
+    padding-right: 35rem;
+  }
+  
+  #localizationForm {
+    width: 112rem;
+    margin: 15rem auto;
+    align-items: center;
+  }
+  form{
+    width: 50rem;
+    height: 60rem;
+    font-size: 25px;
+    padding: 3rem;
+    border-radius: 8px;
+    margin: 7rem auto 15rem;
+  }
+  .form-row input, .form-group input, .form-group select, .form-group textarea{
+    height: calc(4rem + 10px);
+    font-size: 2rem;
+    line-height: 2rem;
+    padding: .4rem .1rem;
+  }
+  #form1 button{
+    width: 14rem;
+    height: 5rem;
+    margin-top: 1rem;
+    font-size: 2.5rem;
+  }
+}
