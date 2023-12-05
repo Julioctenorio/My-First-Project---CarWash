@@ -311,25 +311,21 @@ footer section img:hover {
 }
 
 /* Mobile */
-@media (min-width: 320px) and(max-width: 480px) {
+@media (min-width: 320px) and (max-width: 480px) {
   body{
-    width: 354%;
-    padding:  0;
-    margin: 0;
-    right: 0;
+    width: 80rem;
   }
   main{
-    width: 100%;
+    width: 74.5rem;
     padding-top: 11rem;
     margin: 2vh 7vh 10vh;
   }
   header{
-    padding: 0rem;
-    margin: 0;
     position: fixed;
+    width: 100%;
   }
   footer{
-    width: 107.6%;
+    width: 80rem;
   }
   #header{
     width: 100%;
@@ -343,7 +339,6 @@ footer section img:hover {
     flex-direction:row;
     align-items: center;
     padding: 1rem;
-    width: 50rem;
   }
   #imageDesfoc h1{
     font-size: 3.8rem;
@@ -362,41 +357,52 @@ footer section img:hover {
     display: inline-flex;
     font-size: 2rem;
   }
-  #localizationForm {
-    width: 83rem;
+  #card-img-top{
+    width: 75rem;
   }
   #card-principal{
-    margin-bottom: 10rem;
+    margin-top: 10rem;
+    flex-direction: column-reverse;
   }
   #card-principal h4{
     font-size: 4rem;
   }
   #card-principal h6{
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
   #card-principal p{
     font-size: 2rem;
+    margin-bottom: 7rem;
   }
-  #card-secondary{
-    width: 84rem;
-    margin: 0 auto;
+  #card-principal #services{
+    width: 70rem;
+  }
+  #card-secondary, #localizationForm{
+    width: 75rem;
+    margin: 0 2rem 0 auto;
+  }
+  #localizationMenuService{
+    padding-top: 20rem;
+  }
+  .card{
+    width: 23rem;
   }
   #cards p {
     font-size: 3rem;
   }
   #services, #cards{
-    padding-bottom: 5rem;
+    padding-top: 5rem;   
   }
   #servicesTwo{
     width: 25rem;
   }
   #servicesTwo h4{
-    font-size: 3rem;
+    font-size: 2.6rem;
     letter-spacing: .32rem;
   }
   #servicesTwo h6 {
     font-size: 1.8rem;
-    letter-spacing: .07rem;
+    letter-spacing: .09rem;
   }
   #servicesTwo p{
     display: none;
@@ -405,7 +411,7 @@ footer section img:hover {
     margin: 15rem auto;
   }
   form{
-    width: 70rem;
+    width: 65rem;
     font-size: 70px;
     padding: 3rem;
     border-radius: 8px;
@@ -423,19 +429,24 @@ footer section img:hover {
     margin-top: 2rem;
     font-size: 3rem;
   }
-  
+  #foot img{
+    width: 10rem;
+  }
+  #foot h4, #foot p{
+    font-size: 1.6rem;
+  }
 }
 
 /* Extra small devices */
 @media(min-width: 481px) and (max-width: 767px) {
   body{
-    width: 354%;
+    width: 108rem;
     padding:  0;
     margin: 0;
     right: 0;
   }
   main{
-    width: 99.8%;
+    width: 108rem;
     padding-top: 11rem;
     margin: 2vh 7vh 10vh;
   }
@@ -445,7 +456,7 @@ footer section img:hover {
     position: fixed;
   }
   footer{
-    width: 107.6%;
+    width: 116.25rem;
   }
   #header{
     width: 100%;
@@ -469,7 +480,8 @@ footer section img:hover {
     text-align: center;
   }
   #imageDesfoc img{
-    width: 109.7%;
+    width: 110%;
+    height: 50rem;
   }
   #imageDesfoc button{
     width: 15rem;
@@ -484,6 +496,9 @@ footer section img:hover {
   #localizationForm {
     width: 100rem;
     margin: 15rem auto;
+  }
+  #localizationMenuService{
+    margin-bottom: 20rem;
   }
   #card-principal{
     margin-bottom: 10rem;
@@ -528,24 +543,31 @@ footer section img:hover {
   }
 
   form{
-    width: 70rem;
+    width: 60rem;
     font-size: 70px;
-    padding: 3rem;
+    padding: 2rem;
     border-radius: 8px;
-    margin: 7rem auto;
+    margin: 2.5rem auto;
   }
   .form-row input, .form-group input, .form-group select, .form-group textarea{
-    height: calc(5rem + 10px);
+    height: calc(4rem + 8px);
     font-size: 3rem;
     line-height: 2rem;
     padding: .4rem .1rem;
   }
   #form1 button{
     width: 18rem;
-    height: 7rem;
+    height: 6rem;
     margin-top: 2rem;
     font-size: 3rem;
   }
+  #foot img{
+    width: 10rem;
+  }
+  #foot h4, #foot p{
+    font-size: 2rem;
+  }
+  
 }
 
 /* Small tablets */
@@ -812,7 +834,7 @@ footer section img:hover {
   }
   #card-principal{
     margin-bottom: 10rem;
-    width: 168rem;
+    width: 195rem;
   }
   #card-principal h4{
     font-size: 5rem;
@@ -824,7 +846,7 @@ footer section img:hover {
     font-size: 2rem;
   }
   #card-secondary{
-    width: 170rem;
+    width: 194rem;
     height: 90rem;
     margin: 10rem auto 0;
     background-size: 100%;
@@ -840,7 +862,7 @@ footer section img:hover {
     align-items: center;
   }
   .card{
-    width: 55rem;
+    width: 64rem;
   }
   #services h6{
     font-size: 3rem;
