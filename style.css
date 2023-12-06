@@ -283,12 +283,6 @@ footer section img:hover {
   width: 27.4rem;
 }
 
-.card:hover {
-  width: 28rem;
-  transition: .2s;
-  backdrop-filter: opacity(20px);
-}
-
 .logoSocialMedia2 {
   width: 1.6rem;
 }
@@ -754,7 +748,7 @@ footer section img:hover {
 /* Large tablets/laptops*/
 @media(min-width: 992px) and (max-width: 1199px) {
   body{
-    width: 265%;
+    width: 267rem;
     margin-top: 0;
     padding-top: 0;
   }
@@ -769,7 +763,8 @@ footer section img:hover {
     position: fixed;
   }
   footer{
-    width: 108.5%;
+    width: 287.3rem;
+    height: 40rem;
   }
   #header{
     width: 100%;
@@ -782,14 +777,15 @@ footer section img:hover {
     justify-content: space-around;
     flex-direction:row;
     align-items: center;
-    padding: 4rem;
+    padding: 7rem;
     width: 50rem;
   }
   #imageDesfoc{
-    width: 101.3%;
+    width: 99.6%;
+    margin-left: 5rem;
   }
   #imageDesfoc h1{
-    font-size: 3.2rem;
+    font-size: 5.1rem;
     letter-spacing: .3rem;
     padding: 0rem;
     width: 100%;
@@ -797,72 +793,78 @@ footer section img:hover {
   }
   #imageDesfoc img{
     width: 110%;
-    height: 90rem;
+    height: 130rem;
     margin-top: 0px;
     padding-top: 0px;
   }
   #imageDesfoc button{
-    width: 15rem;
+    width: 25rem;
     padding: 2rem;
     margin-top: 5rem;
     border-radius: 10px;
-    font-size: 2.2rem;
+    font-size: 4rem;
   }
   #slogan{
     margin-bottom: 8rem;
+    width: 50rem;
   }
   .navbar-nav{
     display: inline-flex;
-    font-size: 2rem;
+    font-size: 4rem;
   }
   .logoSocialMedia2, #logoInsta2, #fb-logo{
-    width: 3.5rem;
-    margin-right: 2rem;
+    width: 5.5rem;
+    margin-right: 3rem;
   }
 
   #navbar-brand img{
-    margin-left: 5rem;
-    width: 5.5rem;
-    height: 5.5rem;
+    margin-left: 6rem;
+    width: 9.5rem;
+    height: 9.5rem;
   }
   #localizationForm {
-    width: 169.5rem;
+    width: 278.8rem;
     margin: 15rem auto;
   }
   #localizationMenuService{
-    padding-bottom: 5rem;
+    padding: 5rem 0;
   }
   #card-principal{
-    margin-bottom: 10rem;
-    width: 195rem;
+    margin: 15rem 0;
+    width: 280rem;
   }
-  #card-principal h4{
-    font-size: 5rem;
+  #card-principal #services h4{
+    font-size: 10rem;
   }
-  #card-principal h6{
+  #card-principal #services h6{
+    font-size: 5.5rem;
+  }
+  #card-principal #services p{
     font-size: 4.5rem;
   }
-  #card-principal p{
-    font-size: 2rem;
+  #card-img-top{
+    width: 115rem;
   }
   #card-secondary{
-    width: 194rem;
-    height: 90rem;
-    margin: 10rem auto 0;
+    width: 278.8rem;
+    height: 120rem;
+    margin: 25rem auto;
     background-size: 100%;
-    padding-right: 35rem;
+    padding-right: 7rem;
+    justify-content: space-around;
   }
   #cards p {
-    font-size: 3rem;
+    font-size: 5rem;
   }
   #cards{
     height: 50rem;
-    margin-top: 15rem;
-    margin-left: 2.5rem;
+    margin-top: 30rem;
+    margin-left: 12rem;
     align-items: center;
   }
   .card{
-    width: 64rem;
+    width: 90rem;
+    margin-left: 2rem;
   }
   #services h6{
     font-size: 3rem;
@@ -877,58 +879,60 @@ footer section img:hover {
     padding-bottom: 5rem;
   }
   #servicesTwo{
-    width: 50rem;
-    padding-top: 3rem;
-    padding-left: 50rem;
+    width: 150rem;
   }
   #servicesTwo h4{
-    font-size: 4.3rem;
-    letter-spacing: .42rem;
-    margin-top: 2rem;
+    font-size: 7rem;
+    letter-spacing: 1rem;
   }
   #servicesTwo h6 {
-    font-size: 2.8rem;
+    font-size: 4rem;
     letter-spacing: .2rem;
   }
   #servicesTwo p{
-    display: none;
+    font-size: 4rem;
+    letter-spacing: .3rem;
+  }
+  #servicesTwo h4, #servicesTwo h6, #servicesTwo p{
+    margin-left: 80rem;
   }
   #carouselExampleIndicators{
-    width: 170%;
+    width: 240%;
     padding: 2rem;
   }
 
   form{
-    width: 80rem;
-    font-size: 70px;
-    padding: 3rem;
-    border-radius: 8px;
-    margin: 7rem auto 15rem;
+    width: 110rem;
+    height: 135rem;
+    font-size: 100px;
+    padding: 5rem;
+    border-radius: 15px;
+    margin: 40rem auto 30rem;
   }
   .form-row input, .form-group input, .form-group select, .form-group textarea{
-    height: calc(7rem + 10px);
-    font-size: 3rem;
-    line-height: 2rem;
-    padding: .4rem .1rem;
+    height: calc(8rem + 10px);
+    font-size: 4rem;
+    line-height: 3rem;
+    padding: .5rem .2rem;
   }
   #form1 button{
-    width: 18rem;
-    height: 7rem;
-    margin-top: 2rem;
-    font-size: 3rem;
+    width: 25rem;
+    height: 10rem;
+    margin-top: 7rem;
+    font-size: 5rem;
   }
 
   footer #foot img{
-    height: 8rem;
-    width: 8rem;
+    height: 12rem;
+    width: 12rem;
   }
 
   footer #foot h4{
-    font-size: 3rem;
+    font-size: 5rem;
   }
 
   footer #foot p{
-    font-size: 1.8rem;
+    font-size: 3rem;
   }
 }
 
