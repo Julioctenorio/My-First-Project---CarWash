@@ -305,9 +305,14 @@ footer section img:hover {
 }
 
 /* Mobile */
+@media (max-width: 319px){
+body{
+  width: 69.5rem;
+}
+}
 @media (min-width: 320px) and (max-width: 480px) {
   body{
-    width: 80rem;
+    width: 79.5rem;
   }
   main{
     width: 74.5rem;
@@ -319,7 +324,7 @@ footer section img:hover {
     width: 100%;
   }
   footer{
-    width: 80rem;
+    width: 81rem;
   }
   #header{
     width: 100%;
@@ -382,10 +387,19 @@ footer section img:hover {
     width: 23rem;
   }
   #cards p {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   #services, #cards{
     padding-top: 5rem;   
+  }
+  #services h4{
+    font-size: 5.2rem;
+  }
+  #services h6{
+    font-size: 2.5rem;
+  }
+  #services p{
+    font-size: 2.7rem;
   }
   #servicesTwo{
     width: 25rem;
@@ -405,15 +419,15 @@ footer section img:hover {
     margin: 15rem auto;
   }
   form{
-    width: 65rem;
-    font-size: 70px;
+    width: 58rem;
+    font-size: 60px;
     padding: 3rem;
     border-radius: 8px;
     margin: 7rem auto;
   }
   .form-row input, .form-group input, .form-group select, .form-group textarea{
-    height: calc(5rem + 10px);
-    font-size: 3rem;
+    height: calc(4.5rem + 10px);
+    font-size: 2.5rem;
     line-height: 2rem;
     padding: .4rem .1rem;
   }
@@ -424,7 +438,7 @@ footer section img:hover {
     font-size: 3rem;
   }
   #foot img{
-    width: 10rem;
+    width: 9rem;
   }
   #foot h4, #foot p{
     font-size: 1.6rem;
@@ -567,7 +581,7 @@ footer section img:hover {
 /* Small tablets */
 @media(min-width: 768px) and (max-width: 991px) {
   body{
-    width: 372%;
+    width: 175rem;
     padding:  0;
     margin: 0;
     right: 0;
@@ -578,12 +592,12 @@ footer section img:hover {
     margin: 2vh 7vh 10vh;
   }
   header{
-    padding: 0rem;
+    padding: 3rem;
     margin: 0;
     position: fixed;
   }
   footer{
-    width: 107.6%;
+    width: 187rem;
   }
   #header{
     width: 100%;
@@ -591,13 +605,13 @@ footer section img:hover {
     margin: 0;
   }
   #navbar-brand img{
-    width: 6rem;
-    height: 6rem;
+    width: 7.5rem;
+    height: 7.5rem;
     margin-left: 4rem;
   }
   #socialMedia img{
-    width: 3rem;
-    height: 3rem;
+    width: 4.5rem;
+    height: 4.5rem;
     margin-right: 2rem;
   }
   #navbarNav {
@@ -610,10 +624,10 @@ footer section img:hover {
     width: 50rem;
   }
   #imageDesfoc{
-    width: 101%;
+    width: 170rem;
   }
   #imageDesfoc h1{
-    font-size: 3.2rem;
+    font-size: 3.5rem;
     letter-spacing: .3rem;
     padding: 0rem;
     width: 100%;
@@ -637,12 +651,9 @@ footer section img:hover {
   }
   .navbar-nav{
     display: inline-flex;
-    font-size: 2rem;
+    font-size: 4rem;
+    gap: 2rem;
   }
-  
-
-
-
 
   #localizationForm {
     width: 175rem;
@@ -651,24 +662,28 @@ footer section img:hover {
   #card-principal{
     margin-bottom: 10rem;
   }
-  #card-principal h4{
-    font-size: 4rem;
+  #card-img-top{
+    width: 80rem;
   }
-  #card-principal h6{
-    font-size: 2.5rem;
+  #card-principal #services h4{
+    font-size: 7rem;
   }
-  #card-principal p{
-    font-size: 2rem;
+  #card-principal #services h6{
+    font-size: 3rem;
+  }
+  #card-principal #services p{
+    font-size: 2.8rem;
   }
   #card-secondary{
-    width: 176rem;
+    width: 175rem;
     height: 90rem;
     margin: 10rem auto 0;
     background-size: 100%;
     padding-right: 35rem;
+    justify-content: space-around;
   }
   #cards p {
-    font-size: 3rem;
+    font-size: 3.8rem;
   }
   #cards{
     height: 50rem;
@@ -677,58 +692,52 @@ footer section img:hover {
   .card{
     width: 55rem;
   }
-  #services h6{
-    font-size: 3rem;
-  }
-  #services h4{
-    font-size: 6rem;
-  }
-  #services P{
-    font-size: 2.5rem;
-  }
   #services, #cards{
     padding-bottom: 5rem;
   }
+  #card-principal #services p {
+    font-size: 3.5rem;
+  }
   #servicesTwo{
-    width: 50rem;
-    padding-top: 3rem;
+    width: 60rem;
+    padding-top: 1rem;
     padding-left: 50rem;
   }
   #servicesTwo h4{
-    font-size: 4.3rem;
+    font-size: 5.2rem;
     letter-spacing: .42rem;
     margin-top: 2rem;
   }
   #servicesTwo h6 {
-    font-size: 2.8rem;
+    font-size: 2.2rem;
     letter-spacing: .2rem;
   }
   #servicesTwo p{
     display: none;
   }
   #carouselExampleIndicators{
-    width: 170%;
-    padding: 2rem;
+    width: 180%;
+    padding: 1rem;
   }
 
   form{
-    width: 80rem;
-    font-size: 70px;
-    padding: 3rem;
+    width: 105rem;
+    font-size: 6rem;
+    padding: 4rem;
     border-radius: 8px;
     margin: 7rem auto 15rem;
   }
   .form-row input, .form-group input, .form-group select, .form-group textarea{
-    height: calc(7rem + 10px);
-    font-size: 3rem;
+    height: calc(7.5rem + 10px);
+    font-size: 3.5rem;
     line-height: 2rem;
-    padding: .4rem .1rem;
+    padding: .5rem .1rem;
   }
   #form1 button{
-    width: 18rem;
-    height: 7rem;
+    width: 30rem;
+    height: 10rem;
     margin-top: 2rem;
-    font-size: 3rem;
+    font-size: 4rem;
   }
 
   footer #foot img{
