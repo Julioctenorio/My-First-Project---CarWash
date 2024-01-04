@@ -64,7 +64,7 @@ form{
   height: 38rem;
   font-size: 20px;
   border-radius: 6px;
-  box-shadow: .2px .2px .2px .2px rgb(39, 39, 39);
+  box-shadow: .2px .2px 5px .01px rgb(39, 39, 39);
   margin: 3rem auto;
   border: black 1px solid;
   align-items: center;
