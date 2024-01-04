@@ -12,6 +12,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Montserrat&family=Playfair+Display&family=Raleway&display=swap"
     rel="stylesheet">
+  <script src="index.html"></script>
 
   <title>Document</title>
 </head>
@@ -19,31 +20,22 @@
 <body>
   <header>
     <section id="header">
-      <nav class="navbar navbar-expand-md navbar-dark col-12"  id="navBarSection">
-        <a id="navbar-brand" class="d-none d-md-block" href="#"><img src="./img/logo1.1.jpg" class="rounded-circle"
+      <nav class="nav">
+        <a id="navbar-brand" href="#"><img src="./img/logo1.1.jpg" class="rounded-circle"
             alt="" id="logoLuhan"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <div class="navbar-nav">
-            <a class="nav-item nav-link active" href="#">Início<span class="sr-only">(Página atual)</span></a>
-            <a class="nav-item nav-link" href="#localizationMenuService">Serviços</a>
-            <a class="nav-item nav-link" href="#localizationForm">Agende</a>
+        <!-- Outros itens do menu -->
+        <div class="menu">
+          <a href="#">Home</a>
+          <a href="#localizationMenuService">Serviços</a>
+          <a href="#localizationForm">Agende</a>
+          <a href="#" id="toggleContacts">Contatos &#9660;</a>
+          <a href="#" id="loginSymbol">&#128100;</a>
+          <div id="contactsContent" class="hidden">
+            <a href="https://www.facebook.com/luhan.costa" target="_blank">Facebook</a>
+            <a href="https://www.instagram.com/gl_esteticaautomotivaa" target="_blank">Instagram</a>
+            <a href="https://api.whatsapp.com/send?phone=+5527999231406" target="_blank">WhatsApp</a>
           </div>
         </div>
-        <section id="socialMedia" class="d-none d-md-block">
-          <div>
-            <a href="https://www.facebook.com/luhan.costa" target="_blank"><img src="./img/fb-w.png"
-                alt="Logo do Facebook" class="logoSocialMedia2" id="fb-logo"></a>
-            <a href="https://www.instagram.com/gl_esteticaautomotivaa" target="_blank"><img src="./img/insta-w.png"
-                alt="Logo do Instagem" id="logoInsta2"></a>
-            <a href="https://api.whatsapp.com/send?phone=+5527999231406" target="_blank"><img src="./img/wpp-w.png"
-                alt="Logo do WhatsApp" class="logoSocialMedia2"></a>
-          </div>
-        </section>
       </nav>
     </section>
   </header>
