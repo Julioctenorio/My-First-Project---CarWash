@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -46,19 +46,23 @@ html {
   color: #fff;
 }
 
-#form{
+#form {
   width: 100%;
   max-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  padding-top: 2rem;
 }
-#form h3{
+
+#form h3 {
   margin: 1rem auto;
   font-size: 2.5rem;
 }
-form{
+
+form {
+  margin-top: 10rem;
   width: 28rem;
   height: 38rem;
   font-size: 20px;
@@ -69,7 +73,10 @@ form{
   align-items: center;
   justify-content: center;
 }
-.form-control input, .form-group select, .form-control textarea{
+
+.form-control input,
+.form-group select,
+.form-control textarea {
   width: 23.5rem;
   height: 2.5rem;
   border-radius: 4px;
@@ -83,18 +90,18 @@ form{
   background-color: #dfdfdf41;
 }
 
-.form-control textarea{
+.form-control textarea {
   resize: none;
   height: 10rem;
 }
 
-#form button{
+#form button {
   width: 10rem;
   background-color: #e7e7e7;
   border: none;
 }
 
-#form button:hover{
+#form button:hover {
   background-color: #bfbfbf;
   color: #fff;
 }
@@ -178,7 +185,7 @@ button:hover {
   box-shadow: 0 0 0 0;
 }
 
-#card-principal{
+#card-principal {
   max-width: 100vw;
   max-height: 100vh;
   display: flex;
@@ -186,46 +193,54 @@ button:hover {
   padding: 1rem;
   gap: 3rem;
 }
-#card-img-top{
+
+#card-img-top {
   width: 100%;
 }
-#services{
+
+#services {
   width: 50%;
 }
-#services h6{
+
+#services h6 {
   font-size: 1.2rem;
   color: rgb(0, 254, 8);
   margin: 1rem 0;
 }
-#services h4{
+
+#services h4 {
   font-size: 3rem;
   margin: 2rem 0;
 }
-#services p{
+
+#services p {
   font-size: 1.86rem;
   margin: 0;
 }
 
-.accordion{
+.accordion {
   width: 100%;
   display: flex;
   justify-content: center;
   height: 35.8rem;
   gap: 1rem;
   transition: .3s;
-  margin: 1.5rem 0 4rem ;
+  margin: 1.5rem 0 4rem;
 }
-.accordion:hover{
+
+.accordion:hover {
   gap: 0;
 }
-.accordion h2{
+
+.accordion h2 {
   font-weight: 400;
   font-size: 24px;
   line-height: 45px;
   border-bottom: 2px solid #fff;
   white-space: nowrap;
 }
-.accordion li{
+
+.accordion li {
   position: relative;
   overflow: hidden;
   flex: 0 0 8.5rem;
@@ -233,7 +248,8 @@ button:hover {
   opacity: 0.75px;
   cursor: pointer;
 }
-.accordion li img{
+
+.accordion li img {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -242,13 +258,15 @@ button:hover {
   height: 100%;
   object-fit: cover;
 }
+
 .accordion li,
 .accordion li img,
 .accordion li .contents,
-.accordion li .contents span{
+.accordion li .contents span {
   transition: 0.3s;
 }
-.accordion li .contents{
+
+.accordion li .contents {
   position: absolute;
   top: 0;
   left: 0;
@@ -262,7 +280,8 @@ button:hover {
   opacity: 0;
   visibility: hidden;
 }
-.accordion li .contents span{
+
+.accordion li .contents span {
   position: absolute;
   z-index: 3;
   left: 50%;
@@ -271,30 +290,122 @@ button:hover {
   visibility: hidden;
   opacity: 0;
 }
-.accordion li:hover{
+
+.accordion li:hover {
   flex: 0 1 50rem;
   scale: 1.1;
   z-index: 10;
   opacity: 1;
 }
-.accordion li:hover .contents{
+
+.accordion li:hover .contents {
   opacity: 1;
   visibility: visible;
 }
-.accordion li:hover span{
+
+.accordion li:hover span {
   translate: -50% 0;
   opacity: 1;
   visibility: visible;
 }
-.about-services h2{
+
+.about-services h2 {
   align-items: center;
   text-align: center;
   font-size: 2.5rem;
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-.about-services{
-  padding: 3rem 0 .2rem;
+
+.about-services {
+  padding: 3rem 0 2rem;
   background-color: #bf9dba2d;
+}
+
+footer {
+  width: 100%;
+  padding: 1.87rem;
+  color: rgb(255 255 255 / 50%);
+  background: hsla(210, 10%, 25%, 1) 100%;
+}
+
+.top {
+  position: relative;
+  display: grid;
+  border-bottom: 2px solid rgb(255 255 255 / 20%);
+  padding-bottom: 1.25rem;
+}
+
+.top .links {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.875rem;
+  margin-bottom: 1.875rem;
+}
+
+.top .links-column {
+  display: grid;
+  gap: .625rem;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.links-column a {
+  text-decoration: none;
+  color: rgba(112, 252, 145, 0.686);
+}
+
+.top h2 {
+  margin: 0 0 .625rem;
+  font-size: .75rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: rgb(255 255 255 / 96%);
+}
+
+.top p {
+  margin: 0;
+}
+
+.top .socials {
+  position: absolute;
+  left: 50%;
+  bottom: .625rem;
+  translate: -50% 0;
+  display: flex;
+  align-items: center;
+  gap: 1.125rem;
+  height: 3.5rem;
+}
+
+.top .socials>a {
+  font-size: 1.5rem;
+}
+
+.socials-column:is(h2, p) {
+  display: none;
+}
+
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column-reverse;
+  gap: .5rem;
+  padding: .5rem 0;
+  text-align: center;
+}
+
+.legal>a {
+  margin-right: .25rem;
+}
+
+.copyright {
+  font-size: .75rem;
+}
+
+.socials a img {
+  width: 2rem;
 }
 
 
@@ -304,27 +415,31 @@ button:hover {
     cursor: pointer;
   }
 
-  #form{
+  #form {
     max-width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
   }
-  form{
+
+  form {
     width: 19rem;
     height: 33rem;
   }
-  form label{
+
+  form label {
     display: none;
   }
 
-  .form-control input, .form-group select, .form-control textarea{
+  .form-control input,
+  .form-group select,
+  .form-control textarea {
     width: 85%;
     height: 2rem;
   }
 
-  .form-control textarea{
+  .form-control textarea {
     height: 7rem;
   }
 
@@ -369,7 +484,8 @@ button:hover {
     height: 150%;
     padding-top: 4rem;
   }
-  #imageDesfoc button{
+
+  #imageDesfoc button {
     display: none;
   }
 
@@ -399,33 +515,40 @@ button:hover {
     justify-content: center;
     margin-top: .8rem;
   }
-  button{
+
+  button {
     width: 5rem;
     height: 2.5rem;
     font-size: .7rem;
   }
-  #services{
+
+  #services {
     display: flex;
     flex-direction: column;
     width: 100%;
   }
-  #services h6{
+
+  #services h6 {
     font-size: 1rem;
     margin: .7rem 0;
   }
-  #services h4{
+
+  #services h4 {
     font-size: 1.9rem;
     margin: .7rem 0;
   }
-  #services p{
+
+  #services p {
     font-size: 1.2rem;
     margin: .7rem 0;
   }
-  #card-img-top{
+
+  #card-img-top {
     width: 100%;
     margin-top: 2rem;
   }
-  #card-principal{
+
+  #card-principal {
     max-width: 100%;
     max-height: 100%;
     display: inline-block;
@@ -434,7 +557,8 @@ button:hover {
     gap: 1rem;
     margin: 2rem 0;
   }
-  .accordion{
+
+  .accordion {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -442,24 +566,28 @@ button:hover {
     gap: .1rem;
     transition: .3s;
   }
-  .accordion:hover{
+
+  .accordion:hover {
     gap: 0;
   }
-  .accordion h2{
+
+  .accordion h2 {
     font-weight: 400;
     font-size: 18px;
     line-height: 25px;
     border-bottom: 2px solid #fff;
     white-space: nowrap;
   }
-  .accordion li{
+
+  .accordion li {
     position: relative;
     overflow: hidden;
     flex: 0 0 4rem;
     border-radius: 50px;
     opacity: 0.75px;
   }
-  .accordion li img{
+
+  .accordion li img {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -468,13 +596,15 @@ button:hover {
     height: 100%;
     object-fit: cover;
   }
+
   .accordion li,
   .accordion li img,
   .accordion li .contents,
-  .accordion li .contents span{
+  .accordion li .contents span {
     transition: 0.3s;
   }
-  .accordion li .contents{
+
+  .accordion li .contents {
     position: absolute;
     top: 0;
     left: 0;
@@ -488,7 +618,8 @@ button:hover {
     opacity: 0;
     visibility: hidden;
   }
-  .accordion li .contents span{
+
+  .accordion li .contents span {
     position: absolute;
     z-index: 3;
     left: 50%;
@@ -497,16 +628,19 @@ button:hover {
     visibility: hidden;
     opacity: 0;
   }
-  .accordion li:hover{
+
+  .accordion li:hover {
     flex: 0 1 37.5rem;
     scale: 1.1;
     opacity: 1;
   }
-  .accordion li:hover .contents{
+
+  .accordion li:hover .contents {
     opacity: 1;
     visibility: visible;
   }
-  .accordion li:hover span{
+
+  .accordion li:hover span {
     translate: -50% 0;
     opacity: 1;
     visibility: visible;
@@ -520,27 +654,31 @@ button:hover {
     cursor: pointer;
   }
 
-  #form{
+  #form {
     max-width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
   }
-  form{
+
+  form {
     width: 19rem;
     height: 33rem;
   }
-  form label{
+
+  form label {
     display: none;
   }
 
-  .form-control input, .form-group select, .form-control textarea{
+  .form-control input,
+  .form-group select,
+  .form-control textarea {
     width: 85%;
     height: 2rem;
   }
 
-  .form-control textarea{
+  .form-control textarea {
     height: 7rem;
   }
 
@@ -584,11 +722,11 @@ button:hover {
     position: relative;
   }
 
-  #imageDesfoc img{
+  #imageDesfoc img {
     padding-top: 1.8rem;
   }
 
-  #imageDesfoc button{
+  #imageDesfoc button {
     display: none;
   }
 
@@ -620,28 +758,34 @@ button:hover {
     justify-content: center;
     margin-top: 1rem;
   }
-  #services{
+
+  #services {
     display: flex;
     flex-direction: column;
     width: 100%;
   }
-  #services h6{
+
+  #services h6 {
     font-size: 1rem;
     margin: .7rem 0;
   }
-  #services h4{
+
+  #services h4 {
     font-size: 1.9rem;
     margin: .7rem 0;
   }
-  #services p{
+
+  #services p {
     font-size: 1.2rem;
     margin: .7rem 0;
   }
-  #card-img-top{
+
+  #card-img-top {
     width: 100%;
     margin-top: 2rem;
   }
-  #card-principal{
+
+  #card-principal {
     max-width: 100%;
     max-height: 100%;
     display: inline-block;
@@ -650,7 +794,8 @@ button:hover {
     gap: 1rem;
     margin: 2rem 0;
   }
-  .accordion{
+
+  .accordion {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -658,24 +803,28 @@ button:hover {
     gap: .1rem;
     transition: .3s;
   }
-  .accordion:hover{
+
+  .accordion:hover {
     gap: 0;
   }
-  .accordion h2{
+
+  .accordion h2 {
     font-weight: 400;
     font-size: 18px;
     line-height: 25px;
     border-bottom: 2px solid #fff;
     white-space: nowrap;
   }
-  .accordion li{
+
+  .accordion li {
     position: relative;
     overflow: hidden;
     flex: 0 0 4rem;
     border-radius: 50px;
     opacity: 0.75px;
   }
-  .accordion li img{
+
+  .accordion li img {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -684,13 +833,15 @@ button:hover {
     height: 100%;
     object-fit: cover;
   }
+
   .accordion li,
   .accordion li img,
   .accordion li .contents,
-  .accordion li .contents span{
+  .accordion li .contents span {
     transition: 0.3s;
   }
-  .accordion li .contents{
+
+  .accordion li .contents {
     position: absolute;
     top: 0;
     left: 0;
@@ -704,7 +855,8 @@ button:hover {
     opacity: 0;
     visibility: hidden;
   }
-  .accordion li .contents span{
+
+  .accordion li .contents span {
     position: absolute;
     z-index: 3;
     left: 50%;
@@ -713,16 +865,19 @@ button:hover {
     visibility: hidden;
     opacity: 0;
   }
-  .accordion li:hover{
+
+  .accordion li:hover {
     flex: 0 1 15rem;
     scale: 1.1;
     opacity: 1;
   }
-  .accordion li:hover .contents{
+
+  .accordion li:hover .contents {
     opacity: 1;
     visibility: visible;
   }
-  .accordion li:hover span{
+
+  .accordion li:hover span {
     translate: -50% 0;
     opacity: 1;
     visibility: visible;
@@ -736,27 +891,31 @@ button:hover {
     cursor: pointer;
   }
 
-  #form{
+  #form {
     max-width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
   }
-  form{
+
+  form {
     width: 22rem;
     height: 33rem;
   }
-  form label{
+
+  form label {
     display: none;
   }
 
-  .form-control input, .form-group select, .form-control textarea{
+  .form-control input,
+  .form-group select,
+  .form-control textarea {
     width: 90%;
     height: 2rem;
   }
 
-  .form-control textarea{
+  .form-control textarea {
     height: 7rem;
   }
 
@@ -822,7 +981,7 @@ button:hover {
     font-size: 1rem;
     margin-top: .3rem;
     text-align: center;
-    
+
   }
 
   #buttonTop {
@@ -831,33 +990,40 @@ button:hover {
     justify-content: center;
     margin-top: .3rem;
   }
-  button{
+
+  button {
     width: 5rem;
     height: 2.5rem;
     font-size: .7rem;
   }
-  #services{
+
+  #services {
     display: flex;
     flex-direction: column;
     width: 100%;
   }
-  #services h6{
+
+  #services h6 {
     font-size: 1rem;
     margin: .7rem 0;
   }
-  #services h4{
+
+  #services h4 {
     font-size: 1.9rem;
     margin: .7rem 0;
   }
-  #services p{
+
+  #services p {
     font-size: 1.2rem;
     margin: .7rem 0;
   }
-  #card-img-top{
+
+  #card-img-top {
     width: 100%;
     margin-top: 2rem;
   }
-  #card-principal{
+
+  #card-principal {
     max-width: 100%;
     max-height: 100%;
     display: inline-block;
@@ -866,7 +1032,8 @@ button:hover {
     gap: 1rem;
     margin: 2rem 0;
   }
-  .accordion{
+
+  .accordion {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -874,24 +1041,28 @@ button:hover {
     gap: .1rem;
     transition: .3s;
   }
-  .accordion:hover{
+
+  .accordion:hover {
     gap: 0;
   }
-  .accordion h2{
+
+  .accordion h2 {
     font-weight: 400;
     font-size: 18px;
     line-height: 25px;
     border-bottom: 2px solid #fff;
     white-space: nowrap;
   }
-  .accordion li{
+
+  .accordion li {
     position: relative;
     overflow: hidden;
     flex: 0 0 4rem;
     border-radius: 50px;
     opacity: 0.75px;
   }
-  .accordion li img{
+
+  .accordion li img {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -900,13 +1071,15 @@ button:hover {
     height: 100%;
     object-fit: cover;
   }
+
   .accordion li,
   .accordion li img,
   .accordion li .contents,
-  .accordion li .contents span{
+  .accordion li .contents span {
     transition: 0.3s;
   }
-  .accordion li .contents{
+
+  .accordion li .contents {
     position: absolute;
     top: 0;
     left: 0;
@@ -920,7 +1093,8 @@ button:hover {
     opacity: 0;
     visibility: hidden;
   }
-  .accordion li .contents span{
+
+  .accordion li .contents span {
     position: absolute;
     z-index: 3;
     left: 50%;
@@ -929,19 +1103,45 @@ button:hover {
     visibility: hidden;
     opacity: 0;
   }
-  .accordion li:hover{
+
+  .accordion li:hover {
     flex: 0 1 17rem;
     scale: 1.1;
     opacity: 1;
   }
-  .accordion li:hover .contents{
+
+  .accordion li:hover .contents {
     opacity: 1;
     visibility: visible;
   }
-  .accordion li:hover span{
+
+  .accordion li:hover span {
     translate: -50% 0;
     opacity: 1;
     visibility: visible;
+  }
+
+  .links-column {
+    text-align: left;
+  }
+
+  .top .links {
+    grid-template-columns: repeat(2, 1fr);
+    margin-right: 13.125rem;
+  }
+
+  .top .socials {
+    left: 0;
+    translate: 0;
+  }
+
+  .bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 1.25rem;
+    text-align: left;
   }
 }
 
@@ -952,27 +1152,31 @@ button:hover {
     cursor: pointer;
   }
 
-  #form{
+  #form {
     max-width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
   }
-  form{
+
+  form {
     width: 25rem;
     height: 33rem;
   }
-  form label{
+
+  form label {
     display: none;
   }
 
-  .form-control input, .form-group select, .form-control textarea{
+  .form-control input,
+  .form-group select,
+  .form-control textarea {
     width: 85%;
     height: 2rem;
   }
 
-  .form-control textarea{
+  .form-control textarea {
     height: 7rem;
   }
 
@@ -1038,7 +1242,7 @@ button:hover {
     font-size: 1.3rem;
     margin-top: .4rem;
     text-align: center;
-    
+
   }
 
   #buttonTop {
@@ -1047,33 +1251,40 @@ button:hover {
     justify-content: center;
     margin-top: .8rem;
   }
-  button{
+
+  button {
     width: 5rem;
     height: 2.5rem;
     font-size: .7rem;
   }
-  #services{
+
+  #services {
     display: flex;
     flex-direction: column;
     width: 100%;
   }
-  #services h6{
+
+  #services h6 {
     font-size: 1rem;
     margin: .7rem 0;
   }
-  #services h4{
+
+  #services h4 {
     font-size: 1.9rem;
     margin: .7rem 0;
   }
-  #services p{
+
+  #services p {
     font-size: 1.2rem;
     margin: .7rem 0;
   }
-  #card-img-top{
+
+  #card-img-top {
     width: 100%;
     margin-top: 2rem;
   }
-  #card-principal{
+
+  #card-principal {
     max-width: 100%;
     max-height: 100%;
     display: inline-block;
@@ -1082,7 +1293,8 @@ button:hover {
     gap: 1rem;
     margin: 2rem 0;
   }
-  .accordion{
+
+  .accordion {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -1090,24 +1302,28 @@ button:hover {
     gap: .1rem;
     transition: .3s;
   }
-  .accordion:hover{
+
+  .accordion:hover {
     gap: 0;
   }
-  .accordion h2{
+
+  .accordion h2 {
     font-weight: 400;
     font-size: 18px;
     line-height: 25px;
     border-bottom: 2px solid #fff;
     white-space: nowrap;
   }
-  .accordion li{
+
+  .accordion li {
     position: relative;
     overflow: hidden;
     flex: 0 0 4rem;
     border-radius: 50px;
     opacity: 0.75px;
   }
-  .accordion li img{
+
+  .accordion li img {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -1116,13 +1332,15 @@ button:hover {
     height: 100%;
     object-fit: cover;
   }
+
   .accordion li,
   .accordion li img,
   .accordion li .contents,
-  .accordion li .contents span{
+  .accordion li .contents span {
     transition: 0.3s;
   }
-  .accordion li .contents{
+
+  .accordion li .contents {
     position: absolute;
     top: 0;
     left: 0;
@@ -1136,7 +1354,8 @@ button:hover {
     opacity: 0;
     visibility: hidden;
   }
-  .accordion li .contents span{
+
+  .accordion li .contents span {
     position: absolute;
     z-index: 3;
     left: 50%;
@@ -1145,45 +1364,53 @@ button:hover {
     visibility: hidden;
     opacity: 0;
   }
-  .accordion li:hover{
+
+  .accordion li:hover {
     flex: 0 1 17rem;
     scale: 1.1;
     opacity: 1;
   }
-  .accordion li:hover .contents{
+
+  .accordion li:hover .contents {
     opacity: 1;
     visibility: visible;
   }
-  .accordion li:hover span{
+
+  .accordion li:hover span {
     translate: -50% 0;
     opacity: 1;
     visibility: visible;
   }
 }
+
 /* Estilos para tablets e monitores menores */
 @media (min-width: 708px) and (max-width: 991.98px) {
 
-  #form{
+  #form {
     max-width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
   }
-  form{
+
+  form {
     width: 25rem;
     height: 33rem;
   }
-  form label{
+
+  form label {
     display: none;
   }
 
-  .form-control input, .form-group select, .form-control textarea{
+  .form-control input,
+  .form-group select,
+  .form-control textarea {
     width: 85%;
     height: 2rem;
   }
 
-  .form-control textarea{
+  .form-control textarea {
     height: 7rem;
   }
 
@@ -1222,34 +1449,41 @@ button:hover {
     justify-content: center;
     margin-top: .8rem;
   }
-  button{
+
+  button {
     width: 6rem;
     height: 2.5rem;
     font-size: .8rem;
     margin-top: 1rem;
   }
-  #services{
+
+  #services {
     display: flex;
     flex-direction: column;
     width: 100%;
   }
-  #services h6{
+
+  #services h6 {
     font-size: 1rem;
     margin: .7rem 0;
   }
-  #services h4{
+
+  #services h4 {
     font-size: 1.9rem;
     margin: .7rem 0;
   }
-  #services p{
+
+  #services p {
     font-size: 1.2rem;
     margin: .7rem 0;
   }
-  #card-img-top{
+
+  #card-img-top {
     width: 100%;
     margin-top: 2rem;
   }
-  #card-principal{
+
+  #card-principal {
     max-width: 100%;
     max-height: 100%;
     display: inline-block;
@@ -1258,7 +1492,8 @@ button:hover {
     gap: 1rem;
     margin: 2rem 0;
   }
-  .accordion{
+
+  .accordion {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -1266,24 +1501,28 @@ button:hover {
     gap: .1rem;
     transition: .3s;
   }
-  .accordion:hover{
+
+  .accordion:hover {
     gap: 0;
   }
-  .accordion h2{
+
+  .accordion h2 {
     font-weight: 400;
     font-size: 18px;
     line-height: 25px;
     border-bottom: 2px solid #fff;
     white-space: nowrap;
   }
-  .accordion li{
+
+  .accordion li {
     position: relative;
     overflow: hidden;
     flex: 0 0 4rem;
     border-radius: 50px;
     opacity: 0.75px;
   }
-  .accordion li img{
+
+  .accordion li img {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -1292,13 +1531,15 @@ button:hover {
     height: 100%;
     object-fit: cover;
   }
+
   .accordion li,
   .accordion li img,
   .accordion li .contents,
-  .accordion li .contents span{
+  .accordion li .contents span {
     transition: 0.3s;
   }
-  .accordion li .contents{
+
+  .accordion li .contents {
     position: absolute;
     top: 0;
     left: 0;
@@ -1312,7 +1553,8 @@ button:hover {
     opacity: 0;
     visibility: hidden;
   }
-  .accordion li .contents span{
+
+  .accordion li .contents span {
     position: absolute;
     z-index: 3;
     left: 50%;
@@ -1321,45 +1563,74 @@ button:hover {
     visibility: hidden;
     opacity: 0;
   }
-  .accordion li:hover{
+
+  .accordion li:hover {
     flex: 0 1 29rem;
     scale: 1.1;
     opacity: 1;
   }
-  .accordion li:hover .contents{
+
+  .accordion li:hover .contents {
     opacity: 1;
     visibility: visible;
   }
-  .accordion li:hover span{
+
+  .accordion li:hover span {
     translate: -50% 0;
     opacity: 1;
     visibility: visible;
+  }
+
+  footer {
+    margin: 0 auto;
+    max-width: 38.25rem;
+    padding: 0;
+  }
+
+  .top .links {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .top .socials {
+    position: static;
+  }
+
+  .bottom {
+    justify-content: flex-start;
+  }
+
+  .socials-column:is(h2, p) {
+    display: block;
   }
 }
 
 /* Estilos para monitores maiores e desktops */
 @media (min-width: 991.99px) and (max-width: 1199.98px) {
-  #form{
+  #form {
     max-width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
   }
-  form{
+
+  form {
     width: 30rem;
-    height: 40rem;
+    height: 45rem;
   }
-  form label{
+
+  form label {
     display: none;
   }
 
-  .form-control input, .form-group select, .form-control textarea{
+  .form-control input,
+  .form-group select,
+  .form-control textarea {
     width: 85%;
     height: 2.5rem;
   }
 
-  .form-control textarea{
+  .form-control textarea {
     height: 10rem;
   }
 
@@ -1398,37 +1669,45 @@ button:hover {
     justify-content: center;
     margin-top: 1.2rem;
   }
-  button{
+
+  button {
     width: 9rem;
     height: 3.2rem;
     font-size: 1.2rem;
     margin-top: 1rem;
   }
-  #services{
+
+  #services {
     display: flex;
     flex-direction: column;
     width: 100%;
     margin-top: 5rem;
   }
+
   #services h6,
   #services h4,
-  #services p{
-    margin:0 0 .7rem ;
+  #services p {
+    margin: 0 0 .7rem;
   }
-  #services h6{
+
+  #services h6 {
     font-size: 1.8rem;
   }
-  #services h4{
+
+  #services h4 {
     font-size: 3.1rem;
   }
-  #services p{
+
+  #services p {
     font-size: 1.8rem;
   }
-  #card-img-top{
+
+  #card-img-top {
     width: 100%;
     margin: 1.5rem 0 5rem;
   }
-  #card-principal{
+
+  #card-principal {
     max-width: 100%;
     max-height: 100%;
     display: inline-block;
@@ -1437,7 +1716,8 @@ button:hover {
     gap: 1rem;
     margin: 2rem 0;
   }
-  .accordion{
+
+  .accordion {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -1445,24 +1725,28 @@ button:hover {
     gap: .1rem;
     transition: .3s;
   }
-  .accordion:hover{
+
+  .accordion:hover {
     gap: 0;
   }
-  .accordion h2{
+
+  .accordion h2 {
     font-weight: 400;
     font-size: 18px;
     line-height: 25px;
     border-bottom: 2px solid #fff;
     white-space: nowrap;
   }
-  .accordion li{
+
+  .accordion li {
     position: relative;
     overflow: hidden;
     flex: 0 0 4rem;
     border-radius: 50px;
     opacity: 0.75px;
   }
-  .accordion li img{
+
+  .accordion li img {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -1471,13 +1755,15 @@ button:hover {
     height: 100%;
     object-fit: cover;
   }
+
   .accordion li,
   .accordion li img,
   .accordion li .contents,
-  .accordion li .contents span{
+  .accordion li .contents span {
     transition: 0.3s;
   }
-  .accordion li .contents{
+
+  .accordion li .contents {
     position: absolute;
     top: 0;
     left: 0;
@@ -1491,7 +1777,8 @@ button:hover {
     opacity: 0;
     visibility: hidden;
   }
-  .accordion li .contents span{
+
+  .accordion li .contents span {
     position: absolute;
     z-index: 3;
     left: 50%;
@@ -1500,16 +1787,19 @@ button:hover {
     visibility: hidden;
     opacity: 0;
   }
-  .accordion li:hover{
+
+  .accordion li:hover {
     flex: 0 1 45rem;
     scale: 1.1;
     opacity: 1;
   }
-  .accordion li:hover .contents{
+
+  .accordion li:hover .contents {
     opacity: 1;
     visibility: visible;
   }
-  .accordion li:hover span{
+
+  .accordion li:hover span {
     translate: -50% 0;
     opacity: 1;
     visibility: visible;
@@ -1518,7 +1808,7 @@ button:hover {
 
 /* Estilos para telas maiores, como monitores widescreen */
 @media (min-width: 1199.99px) {
-  
+
   #slogan {
     top: 25%;
     padding: 0;
@@ -1548,5 +1838,5 @@ button:hover {
     justify-content: center;
     margin-top: 3rem;
   }
-  
+
 }
