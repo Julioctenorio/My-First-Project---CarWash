@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
+
 * {
   margin: 0;
   padding: 0;
@@ -9,15 +12,14 @@ body {
   width: 100%;
   min-height: 100vh;
   margin: 0;
+  padding: 0;
   scroll-behavior: smooth;
   background-color: #f7f7f7;
-}
-
-html {
-  font-family: "helvetica neue", sans serif;
+  font-family: "helvetica neue", Arial, Helvetica, sans-serif;
 }
 
 .nav {
+  font-family: 'Roboto', sans-serif;
   border-bottom: solid 1px #e2e2e2;
   text-align: right;
   height: 70px;
@@ -57,6 +59,8 @@ html {
 }
 
 #form h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
   margin: 1rem auto;
   font-size: 2.5rem;
 }
@@ -96,6 +100,8 @@ form {
 }
 
 #form button {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
   width: 10rem;
   background-color: #e7e7e7;
   border: none;
@@ -146,6 +152,11 @@ header {
   scroll-margin-top: 0;
 }
 
+#imageDesfoc h1,
+#imageDesfoc h2 {
+  font-family: "helvetica neue", sans serif;
+}
+
 #imageDesfoc img {
   filter: brightness(0.45) blur(3px);
   height: 50%;
@@ -170,16 +181,18 @@ header {
 }
 
 button {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
   font-size: 1.3rem;
   width: 10rem;
   height: 3rem;
-  border-radius: 12px;
+  border-radius: 8px;
   box-shadow: .5px .5px 0 0;
 }
 
 button:hover {
-  transform: scale(.9) translateY(-7%);
-  transition: all .6s ease-in-out;
+  transform: scale(1) translateY(1);
+  transition: all .2s ease-in-out;
   cursor: pointer;
   background-color: #888;
   box-shadow: 0 0 0 0;
@@ -203,18 +216,17 @@ button:hover {
 }
 
 #services h6 {
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   color: rgb(0, 254, 8);
-  margin: 1rem 0;
 }
 
 #services h4 {
   font-size: 3rem;
-  margin: 2rem 0;
+  margin: 1rem 0;
 }
 
 #services p {
-  font-size: 1.86rem;
+  font-size: 1.71rem;
   margin: 0;
 }
 
@@ -310,6 +322,8 @@ button:hover {
 }
 
 .about-services h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
   align-items: center;
   text-align: center;
   font-size: 2.5rem;
@@ -352,6 +366,10 @@ footer {
 .links-column a {
   text-decoration: none;
   color: rgba(112, 252, 145, 0.686);
+}
+
+.links-column a:hover {
+  color: rgba(37, 133, 59, 0.686);
 }
 
 .top h2 {
