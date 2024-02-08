@@ -18,34 +18,50 @@ body {
   font-family: "helvetica neue", Arial, Helvetica, sans-serif;
 }
 
-.nav {
-  font-family: 'Roboto', sans-serif;
-  border-bottom: solid 1px #e2e2e2;
+header {
+  background: linear-gradient(90deg, hsla(0, 0%, 0%, 1) 28%, hsla(210, 10%, 25%, 1) 100%);
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  justify-content: center;
   text-align: right;
   height: 70px;
   line-height: 70px;
+  font-family: 'Roboto', sans-serif;
+  border-bottom: solid 1px #e2e2e2;
 }
 
 .menu {
-  margin: 0 30px 0 0;
+  margin: 0 30px 0 0px;
   align-items: center;
-  justify-content: space-evenly;
 }
 
 .menu a {
   clear: right;
   text-decoration: none;
   color: grey;
-  padding: 15px 15px 15px 15px;
+  padding: 15px 15px 22.5px;
   margin: 0 10px;
-  border-radius: 10px;
   transition: 70ms;
   line-height: 70px;
 }
 
 .menu a:hover {
-  background-color: #888;
+  border-bottom: 3px solid #fff;
   color: #fff;
+}
+
+form {
+  margin-top: 10rem;
+  width: 28rem;
+  height: 38rem;
+  font-size: 20px;
+  border-radius: 6px;
+  box-shadow: .2px .2px 5px .01px rgb(39, 39, 39);
+  margin: 3rem auto;
+  border: black 1px solid;
+  align-items: center;
+  justify-content: center;
 }
 
 #form {
@@ -63,19 +79,6 @@ body {
   font-weight: 300;
   margin: 1rem auto;
   font-size: 2.5rem;
-}
-
-form {
-  margin-top: 10rem;
-  width: 28rem;
-  height: 38rem;
-  font-size: 20px;
-  border-radius: 6px;
-  box-shadow: .2px .2px 5px .01px rgb(39, 39, 39);
-  margin: 3rem auto;
-  border: black 1px solid;
-  align-items: center;
-  justify-content: center;
 }
 
 .form-control input,
@@ -125,22 +128,6 @@ label {
   display: none;
 }
 
-header {
-  background: linear-gradient(90deg, hsla(0, 0%, 0%, 1) 28%, hsla(210, 10%, 25%, 1) 100%);
-  position: fixed;
-  z-index: 100;
-  width: 100%;
-}
-
-#loginSymbol {
-  border: 1px solid white;
-  color: white;
-}
-
-#loginSymbol:hover {
-  opacity: 50%;
-  transition: 150ms;
-}
 
 #imageDesfoc {
   padding-top: 3.8rem;
@@ -155,10 +142,11 @@ header {
 #imageDesfoc h1,
 #imageDesfoc h2 {
   font-family: "helvetica neue", sans serif;
+  -webkit-text-stroke: 0px black;
 }
 
 #imageDesfoc img {
-  filter: brightness(0.45) blur(3px);
+  filter: brightness(0.45) blur(4px);
   height: 50%;
   position: relative;
 }
@@ -426,6 +414,81 @@ footer {
   width: 2rem;
 }
 
+a .loginSymbol {
+  width: 2.5rem;
+  height: 2.5rem;
+  cursor: pointer;
+  display: flex;
+  position: absolute;
+  right: 2.2rem;
+  top: .8rem;
+}
+
+
+/* Login Client*/
+.login-form{
+  text-align: center;
+}
+
+
+
+/*Modal Login*/
+.window-modal{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(74, 74, 74, 0.512);
+  backdrop-filter: blur(15px);
+  z-index: 999;
+}
+
+.window-modal.open{
+  display: flex;
+}
+
+.modal{
+  width: 60%;
+  min-width: 450px;
+  min-height: 200px;
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+}
+
+.close{
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 0;
+  background-color: red;
+  color: #FFF;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+@keyframes openModal {
+  from{
+    opacity: 0;
+    transform: translate3d(0, -20px, -5px);
+  }
+  to{
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+.open .modal{
+  animation: openModal .3s;
+}
+
+
+/*Media Queries*/
 
 @media (max-width: 319px) {
   label {
@@ -485,15 +548,6 @@ footer {
 
   #toggle:checked+.menu {
     display: inline-block;
-  }
-
-  #loginSymbol {
-    border: 1px solid white;
-    color: gray;
-  }
-
-  #loginSymbol:hover {
-    color: white;
   }
 
   #imageDesfoc {
@@ -726,15 +780,6 @@ footer {
     display: inline-block;
   }
 
-  #loginSymbol {
-    border: 1px solid white;
-    color: gray;
-  }
-
-  #loginSymbol:hover {
-    color: white;
-  }
-
   #imageDesfoc {
     display: flex;
     position: relative;
@@ -961,15 +1006,6 @@ footer {
 
   #toggle:checked+.menu {
     display: inline-block;
-  }
-
-  #loginSymbol {
-    border: 1px solid white;
-    color: gray;
-  }
-
-  #loginSymbol:hover {
-    color: white;
   }
 
   #imageDesfoc {
@@ -1222,15 +1258,6 @@ footer {
 
   #toggle:checked+.menu {
     display: inline-block;
-  }
-
-  #loginSymbol {
-    border: 1px solid white;
-    color: gray;
-  }
-
-  #loginSymbol:hover {
-    color: white;
   }
 
   #imageDesfoc {
