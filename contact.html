@@ -9,7 +9,7 @@
   <!-- JavaScript Bundle with Popper -->
   <script src="./src/js/script.js" defer></script>
 
-  <title>GL Estética Automotiva</title>
+  <title>GL Contatos</title>
 </head>
 
 <body>
@@ -20,19 +20,18 @@
         <label for="toggle">&#9776;</label>
         <input type="checkbox" id="toggle">
         <div class="menu">
-          <a href="#" class="active">Home</a>
-          <a href="#loc-principal">Sobre</a>
-          <a href="#loc-services">Serviços</a>
+          <a href="index2.html" class="active">Home</a>
+          <a href="index2.html#loc-principal">Sobre</a>
+          <a href="index2.html#loc-services">Serviços</a>
           <a href="contact.html#contactsPrincipal">Contato</a>
-          <!--<button class="loginSymbol" id="loginButton" onclick="openModal()">Login</button>-->
-          <a href="login.html#loc-services"><img class="loginSymbol logo" src="./src/images/login-symbol.webp" alt="imagem de boneco login"> </a> 
+          <!--<button class="loginSymbol" id="loginButton" onclick="openModal()"><img class="loginSymbol src="./src/images/login-symbol.webp" alt="imagem de boneco login"></button>-->
+          <a href="login.html#loc-services"><img class="loginSymbol logo"src="./src/images/login-symbol.webp" alt="imagem de boneco login" ></a>
         </div>
       </nav>
     </section>
   </header>
 
   <main>
-
     <section>
       <div id="imageDesfoc">
         <img src="./src/images/gtr.jpg" width="100%" height="100%" alt="">
@@ -43,70 +42,65 @@
           </h1>
           <h2>
             cuidamos de tudo para você
+            <br><br><br>
+            <span>-CONTATOS</span>
           </h2>
-
         </div>
       </div>
     </section>
 
-    <div id="loc-principal"></div>
+    <div id="contactsPrincipal"></div>
 
-    <section id="card-principal">
-      <article id="services">
-        <h6>SERVIÇO DE QUALIDADE</h6>
-        <h4>Interiores, Exteriores, Motor, Estofos, Ceras, Polimento e Tratamentos Personalizados</h4>
-        <p><span style="font-weight: bold;">GL ESTÉTICA AUTOMOTIVA</span> presta serviço de lavagem e tratamento
-          automóvel. Temos uma tabela de serviços
-          diversificada que vai de encontro com o que procura e valoriza. Entre em contato conosco.</p>
-      </article>
-      <article>
-        <img id="card-img-top" src="./src/images/bg-principal.png" alt="Imagem de capa do card">
-      </article>
+    <section class="contactsPrincipal">
+        <ul>
+          <li class="contactName">Celular</li>
+          <li class="contactTrue">(27)99923-1406</li>
+        </ul>
+        <ul>
+          <li class="contactName">E-mail</li>
+          <li class="contactTrue">gl_esteticaautomotiva@luhan.br</li>
+        </ul>
+        <ul>
+          <li class="contactName">Horário</li>
+          <li class="contactTrue">Todos os dias</li>
+          <li class="contactTrue">10:00 - 19:00</li>
+        </ul>
     </section>
 
     <div id="loc-services"></div><br><br>
 
-    <section class="about-services">
-      <h2>Nossos Serviços</h2>
-      <ul class="accordion">
-        <li>
-          <img src="./src/images/img1.jpg" alt="">
-          <div class="contents">
-            <span>
-              <h2>Limpeza Especializada</h2>
-              <p>Lavegem VIP</p>
-            </span>
-          </div>
-        </li>
-        <li>
-          <img src="./src/images/card1.jpg" alt="">
-          <div class="contents">
-            <span>
-              <h2>Interior</h2>
-              <p>Tratamento Personalizado</p>
-            </span>
-          </div>
-        </li>
-        <li>
-          <img src="./src/images/img2.jpg" alt="">
-          <div class="contents">
-            <span>
-              <h2>Bancos</h2>
-              <p>Tratamento e Renovação</p>
-            </span>
-          </div>
-        </li>
-        <li>
-          <img src="./src/images/card2.jpg" alt="">
-          <div class="contents">
-            <span>
-              <h2>Brilho</h2>
-              <p>Cera</p>
-            </span>
-          </div>
-        </li>
-      </ul>
-    </section>
+    <div class="form">
+      <form action="scheduling"  method="post" class="scheduleForm">
+        <h3>Formulário de contato</h3>
+        <section>
+          <article class="form-control" id="form-control">
+            <label for="name">Nome</label>
+            <input type="text" name="user_name" id="name" placeholder="Nome" required />
+          </article>
+          <article class="form-control">
+            <label for="surname">Sobrenome</label>
+            <input type="text" name="user_surname" id="surname" placeholder="Sobrenome" required />
+          </article>
+          <article class="form-control">
+            <label for="phone">Contato</label>
+            <input type="tel" name="user_phone" id="phone" pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}"
+              placeholder="(27)99999-9999" />
+          </article>
+          <article class="form-control col-md-4">
+            <label for="mail">E-mail</label>
+            <input type="email" name="email" id="email" placeholder="E-mail" required />
+          </article>
+          <article class="form-control">
+            <textarea name="observation" id="observation" class="form-group" rows="5"
+              placeholder="Mensagem..."></textarea>
+          </article>
+          <article id="schedule-button">
+
+            <button type="submit">Agendar</button>
+          </article>
+        </section>
+      </form>
+    </div>
   </main>
 
   <section class="window-modal" id="window-modal">
@@ -132,7 +126,7 @@
         <a href="https://maps.app.goo.gl/M7aFCF6V8Y8NzJxf9" target="_blank">Localização</a>
         <a href="tel:+351999231406">Contato</a>
         <a href="mailto:">E-mail</a>
-        <a href="contact.html#loc-services">Faça seu agendamento <span style="color:  rgb(57, 249, 102);">aqui</span></a>
+        <a href="#loc-services">Faça seu agendamento <span style="color:  rgb(57, 249, 102);">aqui</span></a>
       </div>
 
       <div class="links-column socials-column">

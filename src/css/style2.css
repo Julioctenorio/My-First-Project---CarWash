@@ -7,6 +7,24 @@
   box-sizing: border-box;
 }
 
+.socials #face:hover {
+  background-color: blue;
+  color: blue;
+  border-radius: 20px;
+}
+
+.socials #insta:hover {
+  background-color: purple;
+  color: purple;
+  border-radius: 20px;
+}
+
+.socials #wpp:hover {
+  background-color: green;
+  color: green;
+  border-radius: 20px 20px 20px 5px;
+}
+
 html,
 body {
   width: 100%;
@@ -64,7 +82,7 @@ form {
   justify-content: center;
 }
 
-#form {
+.form {
   width: 100%;
   max-height: 100vh;
   display: flex;
@@ -74,10 +92,10 @@ form {
   padding-top: 2rem;
 }
 
-#form h3 {
+.form h3 {
   font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  margin: 1rem auto;
+  font-weight: 400;
+  margin: 2rem auto;
   font-size: 2.5rem;
 }
 
@@ -92,6 +110,7 @@ form {
   font-size: 1rem;
   line-height: 1.5rem;
   font-size: .8rem;
+  font-family: 'Roboto', sans-serif;
   padding: .4rem .5rem;
   margin: .5rem auto;
   background-color: #dfdfdf41;
@@ -102,20 +121,28 @@ form {
   height: 10rem;
 }
 
-#form button {
+.form button {
   font-family: 'Roboto', sans-serif;
+  font-size: 1.3rem;
   font-weight: 100;
   width: 10rem;
+  height: 3rem;
   background-color: #e7e7e7;
   border: none;
+  border-radius: 8px;
+  box-shadow: .5px .5px 0 0;
 }
 
-#form button:hover {
+.form button:hover {
   background-color: #bfbfbf;
   color: #fff;
+  transform: scale(1) translateY(1);
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+  box-shadow: 0 0 0 0;
 }
 
-label {
+.scheduleForm label, .nav label {
   margin: 0 40px 0 0;
   font-size: 26px;
   line-height: 70px;
@@ -123,6 +150,30 @@ label {
   width: 26px;
   float: right;
 }
+
+.logAndRegister .form label {
+  display: flex;
+  margin: 1rem 0 0 2.5rem;
+}
+
+.logAndRegister .form label span{
+  color: red;
+  margin-left: .3rem;
+}
+
+.logAndRegister .form button {
+  margin: 2rem 0 1.3rem;
+}
+
+.lostPassword a{
+  text-decoration: none;
+  color: #000;
+  font-size: 1rem;
+}
+.lostPassword a:hover{
+  color: #1717c8;
+}
+
 
 #toggle {
   display: none;
@@ -161,29 +212,15 @@ label {
   text-align: center;
 }
 
+#slogan h2 span {
+  border-bottom: 3px solid #fff;
+}
+
 #buttonTop {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 2rem;
-}
-
-button {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  font-size: 1.3rem;
-  width: 10rem;
-  height: 3rem;
-  border-radius: 8px;
-  box-shadow: .5px .5px 0 0;
-}
-
-button:hover {
-  transform: scale(1) translateY(1);
-  transition: all .2s ease-in-out;
-  cursor: pointer;
-  background-color: #888;
-  box-shadow: 0 0 0 0;
 }
 
 #card-principal {
@@ -424,16 +461,55 @@ a .loginSymbol {
   top: .8rem;
 }
 
+.nav a button {
+  background-color: rgba(77, 79, 81, 0.599);
+}
+
+.contactsPrincipal {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 5rem;
+}
+
+.contactsPrincipal ul {
+  list-style-type: none;
+}
+
+.contactName,
+.contactTrue {
+  color: #02022e;
+  font-family: 'helvetica neue', 'Roboto', sans-serif;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.contactName {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.contactTrue {}
+
+.logAndRegister {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.logAndRegister h3 {
+  font-weight: 600;
+}
+
 
 /* Login Client*/
-.login-form{
+.login-form {
   text-align: center;
 }
 
 
 
 /*Modal Login*/
-.window-modal{
+.window-modal {
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -447,11 +523,11 @@ a .loginSymbol {
   z-index: 999;
 }
 
-.window-modal.open{
+.window-modal.open {
   display: flex;
 }
 
-.modal{
+.modal {
   width: 60%;
   min-width: 450px;
   min-height: 200px;
@@ -459,7 +535,7 @@ a .loginSymbol {
   border-radius: 20px;
 }
 
-.close{
+.close {
   position: absolute;
   top: -10px;
   right: -10px;
@@ -474,16 +550,18 @@ a .loginSymbol {
 }
 
 @keyframes openModal {
-  from{
+  from {
     opacity: 0;
     transform: translate3d(0, -20px, -5px);
   }
-  to{
+
+  to {
     opacity: 1;
     transform: translate3d(0, 0, 0);
   }
 }
-.open .modal{
+
+.open .modal {
   animation: openModal .3s;
 }
 
@@ -496,7 +574,7 @@ a .loginSymbol {
     cursor: pointer;
   }
 
-  #form {
+  .form {
     max-width: 100%;
     display: flex;
     align-items: center;
@@ -718,6 +796,11 @@ a .loginSymbol {
     visibility: visible;
   }
 
+  .contactsPrincipal {
+    display: flex;
+    flex-direction: column;
+  }
+
 }
 
 @media (min-width: 320px) and (max-width: 420px) {
@@ -726,7 +809,7 @@ a .loginSymbol {
     cursor: pointer;
   }
 
-  #form {
+  .form {
     max-width: 100%;
     display: flex;
     align-items: center;
@@ -748,6 +831,7 @@ a .loginSymbol {
   .form-control textarea {
     width: 85%;
     height: 2rem;
+    margin-top: .2rem;
   }
 
   .form-control textarea {
@@ -786,7 +870,7 @@ a .loginSymbol {
   }
 
   #imageDesfoc img {
-    padding-top: 1.8rem;
+    padding-top: .5rem;
   }
 
   #imageDesfoc button {
@@ -794,7 +878,7 @@ a .loginSymbol {
   }
 
   #slogan {
-    top: 35%;
+    top: 30%;
     padding-top: 1rem;
     margin: 0;
     display: block;
@@ -945,6 +1029,11 @@ a .loginSymbol {
     opacity: 1;
     visibility: visible;
   }
+
+  .contactsPrincipal {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /* Estilos para telefones pequenos e telas menores */
@@ -954,7 +1043,7 @@ a .loginSymbol {
     cursor: pointer;
   }
 
-  #form {
+  .form {
     max-width: 100%;
     display: flex;
     align-items: center;
@@ -976,10 +1065,15 @@ a .loginSymbol {
   .form-control textarea {
     width: 90%;
     height: 2rem;
+    margin-top: .2rem;
   }
 
   .form-control textarea {
     height: 7rem;
+  }
+
+  form button {
+    font-size: 1.5rem;
   }
 
   .menu {
@@ -1197,6 +1291,11 @@ a .loginSymbol {
     gap: 1.25rem;
     text-align: left;
   }
+
+  .contactsPrincipal {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /* Estilos para telefones maiores e tablets pequenos */
@@ -1206,7 +1305,7 @@ a .loginSymbol {
     cursor: pointer;
   }
 
-  #form {
+  .form {
     max-width: 100%;
     display: flex;
     align-items: center;
@@ -1426,12 +1525,17 @@ a .loginSymbol {
     opacity: 1;
     visibility: visible;
   }
+
+  .contactsPrincipal {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /* Estilos para tablets e monitores menores */
 @media (min-width: 708px) and (max-width: 991.98px) {
 
-  #form {
+  .form {
     max-width: 100%;
     display: flex;
     align-items: center;
@@ -1651,7 +1755,7 @@ a .loginSymbol {
 
 /* Estilos para monitores maiores e desktops */
 @media (min-width: 991.99px) and (max-width: 1199.98px) {
-  #form {
+  .form {
     max-width: 100%;
     display: flex;
     align-items: center;
