@@ -142,7 +142,20 @@ form {
   box-shadow: 0 0 0 0;
 }
 
-.scheduleForm label, .nav label {
+/* Criado para corrigir o toggle*/
+.nav .label {
+  margin: 0 40px 0 0;
+  font-size: 26px;
+  line-height: 70px;
+  display: none;
+  width: 26px;
+  float: right;
+}
+
+/* Fim */
+
+.scheduleForm label,
+.nav label {
   margin: 0 40px 0 0;
   font-size: 26px;
   line-height: 70px;
@@ -156,7 +169,7 @@ form {
   margin: 1rem 0 0 2.5rem;
 }
 
-.logAndRegister .form label span{
+.logAndRegister .form label span {
   color: red;
   margin-left: .3rem;
 }
@@ -165,12 +178,13 @@ form {
   margin: 2rem 0 1.3rem;
 }
 
-.lostPassword a{
+.lostPassword a {
   text-decoration: none;
   color: #000;
   font-size: 1rem;
 }
-.lostPassword a:hover{
+
+.lostPassword a:hover {
   color: #1717c8;
 }
 
@@ -605,7 +619,9 @@ a .loginSymbol {
   .menu {
     text-align: center;
     width: 100%;
-    display: none;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
     position: relative;
     z-index: 1;
     background: linear-gradient(90deg, hsla(0, 0%, 0%, 1) 28%, hsla(210, 10%, 25%, 1) 100%);
@@ -624,8 +640,30 @@ a .loginSymbol {
     opacity: 50%;
   }
 
-  #toggle:checked+.menu {
-    display: inline-block;
+  label[for="toggle"] {
+    display: block;
+    cursor: pointer;
+  }
+
+  .showLogin {
+    display: block;
+  }
+
+  a .loginSymbol {
+    display: none;
+  }
+
+  label[for="toggle"] {
+    display: block;
+    cursor: pointer;
+  }
+
+  .showLogin {
+    display: block;
+  }
+
+  a .loginSymbol {
+    display: none;
   }
 
   #imageDesfoc {
@@ -841,27 +879,38 @@ a .loginSymbol {
   .menu {
     text-align: center;
     width: 100%;
-    display: none;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
     position: relative;
     z-index: 1;
     background: linear-gradient(90deg, hsla(0, 0%, 0%, 1) 28%, hsla(210, 10%, 25%, 1) 100%);
   }
-
+  
   .menu a {
     display: block;
     border-bottom: solid 1px #eaeaeb;
     margin: 0;
     padding: 0;
   }
-
+  
   .menu a:hover {
     color: #fff;
     background-color: #888;
     opacity: 50%;
   }
 
-  #toggle:checked+.menu {
-    display: inline-block;
+    label[for="toggle"] {
+    display: block;
+    cursor: pointer;
+  }
+
+  .showLogin{
+    display: block;
+  }
+
+  a .loginSymbol{
+    display: none;
   }
 
   #imageDesfoc {
@@ -1076,10 +1125,29 @@ a .loginSymbol {
     font-size: 1.5rem;
   }
 
+  #toggle:checked+.menu {
+    display: inline-block;
+  }
+
+  label[for="toggle"] {
+    display: block;
+    cursor: pointer;
+  }
+
+  .showLogin {
+    display: block;
+  }
+
+  a .loginSymbol {
+    display: none;
+  }
+
   .menu {
     text-align: center;
     width: 100%;
-    display: none;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
     position: relative;
     z-index: 1;
     background: linear-gradient(90deg, hsla(0, 0%, 0%, 1) 28%, hsla(210, 10%, 25%, 1) 100%);
@@ -1096,10 +1164,6 @@ a .loginSymbol {
     color: #fff;
     background-color: #888;
     opacity: 50%;
-  }
-
-  #toggle:checked+.menu {
-    display: inline-block;
   }
 
   #imageDesfoc {
@@ -1336,7 +1400,9 @@ a .loginSymbol {
   .menu {
     text-align: center;
     width: 100%;
-    display: none;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
     position: relative;
     z-index: 1;
     background: linear-gradient(90deg, hsla(0, 0%, 0%, 1) 28%, hsla(210, 10%, 25%, 1) 100%);
@@ -1355,8 +1421,17 @@ a .loginSymbol {
     opacity: 50%;
   }
 
-  #toggle:checked+.menu {
-    display: inline-block;
+  label[for="toggle"] {
+    display: block;
+    cursor: pointer;
+  }
+
+  .showLogin {
+    display: none;
+  }
+
+  a .loginSymbol {
+    display: none;
   }
 
   #imageDesfoc {
@@ -1377,13 +1452,13 @@ a .loginSymbol {
   }
 
   #slogan h1 {
-    font-size: 2.6rem;
+    font-size: 3.2rem;
     letter-spacing: .5rem;
     margin-top: 0;
   }
 
   #slogan h2 {
-    font-size: 1.3rem;
+    font-size: 1.8rem;
     margin-top: .4rem;
     text-align: center;
 
@@ -1533,7 +1608,7 @@ a .loginSymbol {
 }
 
 /* Estilos para tablets e monitores menores */
-@media (min-width: 708px) and (max-width: 991.98px) {
+@media (min-width: 707.1px) and (max-width: 991.98px) {
 
   .form {
     max-width: 100%;
@@ -1561,6 +1636,10 @@ a .loginSymbol {
 
   .form-control textarea {
     height: 7rem;
+  }
+
+  .showLogin{
+    display: none;
   }
 
   #imageDesfoc {
@@ -1732,16 +1811,20 @@ a .loginSymbol {
 
   footer {
     margin: 0 auto;
-    max-width: 38.25rem;
+    max-width: 55rem;
     padding: 0;
   }
 
   .top .links {
     grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    margin: 1rem auto;
   }
 
   .top .socials {
-    position: static;
+    align-items: center;
   }
 
   .bottom {
@@ -1751,6 +1834,8 @@ a .loginSymbol {
   .socials-column:is(h2, p) {
     display: block;
   }
+
+
 }
 
 /* Estilos para monitores maiores e desktops */
@@ -1781,6 +1866,10 @@ a .loginSymbol {
 
   .form-control textarea {
     height: 10rem;
+  }
+  
+  .showLogin{
+    display: none;
   }
 
   #imageDesfoc {
@@ -1957,6 +2046,11 @@ a .loginSymbol {
 
 /* Estilos para telas maiores, como monitores widescreen */
 @media (min-width: 1199.99px) {
+
+  
+  .showLogin{
+    display: none;
+  }
 
   #slogan {
     top: 25%;
