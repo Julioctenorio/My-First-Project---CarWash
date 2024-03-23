@@ -150,70 +150,9 @@
 
     <div class="logAndRegister">
 
-      <div class="form">
-        <form action="login">
-          <h3>Iniciar sessão</h3>
-          <section>
-            <article class="form-control" id="form-control">
-              <label for="user_email">E-mail <span>*</span></label>
-              <input type="email" name="user_email" id="user_email" placeholder="seuemail@email.com" required />
-            </article>
-            <article class="form-control">
-              <label for="user_password">Senha <span>*</span></label>
-              <input type="password" name="user_password" id="user_password" placeholder="******" required />
-            </article>
-            <article id="login-button">
-              <button type="submit">Entrar</button>
-            </article>
-            <section class="lostPassword">
-              <a href="lostPassword">Esqueceu a senha?</a>
-            </section>
-          </section>
-        </form>
-      </div>
-
-      <div class="form">
-        <form action="register">
-          <h3>Cadastrar nova conta</h3>
-          <section>
-            <article class="form-control" id="form-control">
-              <label for="newUser_email">E-mail <span>*</span></label>
-              <input type="email" name="newUser_email" id="newUser_email" placeholder="seuemail@email.com *" required />
-            </article>
-            <article class="form-control">
-              <label for="newUserPassword">Senha <span>*</span></label>
-              <input type="password" name="newUserPassword" id="newUserPassword" placeholder="******" required />
-            </article>
-            <article class="form-control">
-              <label for="newUser_phone">Celular <span>*</span></label>
-              <input type="tel" name="newUser_phone" id="newUser_phone" pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}"
-                placeholder="(27)98765-4321" />
-            </article>
-
-            <article id="register-button">
-              <button type="submit">Cadastrar</button>
-            </article>
-          </section>
-        </form>
-      </div>
     </div>
   </main>
 
-  <section class="window-modal" id="window-modal">
-    <div class="modal">
-      <button class="close" id="close" onclick="closeModal()">x</button>
-
-      <form class="login-form">
-        <h2>Login</h2>
-        <h3>Entre com suas credenciais</h3>
-        <input class="control" type="text" id="userName" placeholder="Usuário" required />
-        <article>
-          <input class="control" type="password" id="password" placeholder="Senha" required />
-        </article>
-        <button class="control">Entrar</button>
-      </form>
-    </div>
-  </section>
 
   <footer class="top">
     <div class="links">

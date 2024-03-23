@@ -2528,8 +2528,6 @@ a .loginSymbol {
 
 }
 
-}
-
 /* Estilos para monitores maiores e desktops */
 @media (min-width: 991.99px) and (max-width: 1199.98px) {
   .form {
@@ -2878,7 +2876,6 @@ a .loginSymbol {
     }
 }
 
-}
 }
 
 /* Estilos para telas maiores, como monitores widescreen */
