@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap');
 
 * {
   margin: 0;
@@ -69,7 +69,7 @@ header {
   color: #fff;
 }
 
-form {
+.form form {
   margin-top: 10rem;
   width: 28rem;
   height: 38rem;
@@ -188,6 +188,540 @@ form {
   color: #1717c8;
 }
 
+/* formulário login*/
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #ecf0f1;
+}
+
+.content {
+  background-color: #fff;
+  border-radius: 15px;
+  width: 960px;
+  height: 50%;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.content::before {
+  content: "";
+  position: absolute;
+  background-color: #58af9b;
+  width: 40%;
+  height: 100%;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+
+
+  left: 0;
+}
+
+.container .title {
+  font-size: 28px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.container .title-primary {
+  color: #fff;
+}
+
+.container .title-secondary {
+  color: rgb(57, 249, 102);
+}
+
+.description {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 30px;
+}
+
+.description-primary {
+  color: #fff;
+}
+
+.description-second {
+  color: #7f8c8d;
+}
+
+.btn {
+  width: 150px;
+  align-self: center;
+  border-radius: 15px;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 9.8px;
+  font-weight: bold;
+  padding: 10px 40px;
+  cursor: pointer;
+  margin-top: 1rem;
+  border: none;
+}
+
+.btn-primary {
+  background-color: transparent;
+  border: 1px solid #fff;
+  transition: background-color .5s
+}
+
+.btn-primary:hover {
+  background-color: #fff;
+  color: rgb(57, 249, 102);
+}
+
+.btn-second {
+  background-color: rgb(57, 249, 102);
+  border: 1px solid rgb(57, 249, 102);
+  transition: background-color .5s;
+}
+
+.btn-second:hover {
+  background-color: #fff;
+  border: 1px solid rgb(57, 249, 102);
+  color: rgb(57, 249, 102);
+}
+
+.first-content {
+  display: flex;
+}
+
+.first-content .second-column {
+  z-index: 11;
+}
+
+.first-column {
+  text-align: center;
+  width: 40%;
+  z-index: 10;
+}
+
+.second-column {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.list-social-media {
+  display: flex;
+  list-style-type: none;
+  gap: .5rem;
+}
+
+.item-social-media {
+  border: 1px solid #bdc3c7;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  color: #95a5a6;
+}
+
+.social-media {
+  margin: 1rem 0;
+}
+
+.link-social-media .item-social-media {
+  transition: background-color .5s;
+}
+
+.link-social-media:hover .item-social-media {
+  background-color: rgb(57, 249, 102);
+  color: #FFF;
+  border-color: rgb(57, 249, 102);
+}
+
+.container form {
+  display: flex;
+  flex-direction: column;
+  width: 55%;
+}
+
+.container form input {
+  height: 50px;
+  width: 100%;
+  border: none;
+  background-color: #ecf0f1;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px #ecf0f1 inset !important;
+  -webkit-text-fill-color: #000 !important;
+}
+
+.label-input {
+  background-color: #ecf0f1;
+  display: flex;
+  align-items: center;
+  margin: 8px;
+}
+
+.icon-modify {
+  color: #7f8c8d;
+  padding: 0 5px;
+}
+
+
+
+/* Second content */
+.second-content {
+  display: flex;
+  position: absolute;
+}
+
+.second-content .first-column {
+  order: 2;
+  z-index: -1;
+}
+
+.second-content .second-column {
+  order: 1;
+  z-index: -1;
+}
+
+.password {
+  color: rgb(57, 249, 102);
+  font-size: 0.8rem;
+  margin: .9rem 0;
+  text-align: center;
+}
+
+.password::first-letter {
+  text-transform: capitalize;
+}
+
+.password:hover {
+  color: #02022e;
+}
+
+.sign-in-js .first-content .first-column {
+  z-index: -1;
+}
+
+.sign-in-js .second-content .second-column {
+  z-index: 11;
+}
+
+.sign-in-js .second-content .first-column {
+  z-index: 13;
+}
+
+.sign-in-js .content::before {
+  left: 60%;
+  border-radius: 0 15px 15px 0;
+  animation: slidein .3s;
+
+  z-index: 12;
+}
+
+.sign-up-js .content::before {
+  animation: slideout 1.3s;
+  /*MODIFIQUEI DE 3s PARA 1.3s*/
+
+  z-index: 12;
+} 
+
+.sign-up-js .second-content .first-column,
+.sign-up-js .second-content .second-column {
+  z-index: -1;
+}
+
+.sign-up-js .first-content .second-column {
+  z-index: 11;
+}
+
+.sign-up-js .first-content .first-column {
+  z-index: 13;
+}
+
+.sign-in-js .first-content .second-column {
+
+  z-index: -1;
+  position: relative;
+  animation: deslocamentoEsq 1.3s;
+  /*MODIFIQUEI DE 3s PARA 1.3s*/
+}
+
+.sign-up-js .second-content .second-column {
+  position: relative;
+  z-index: -1;
+  animation: deslocamentoDir 1.3s;
+  /*MODIFIQUEI DE 3s PARA 1.3s*/
+}
+
+/* Animação CSS */
+@keyframes deslocamentoEsq {
+
+  from {
+    left: 0;
+    opacity: 1;
+    z-index: 12;
+  }
+
+  25% {
+    left: -80px;
+    opacity: .5;
+    /* z-index: 12; NÃO HÁ NECESSIDADE */
+  }
+
+  50% {
+    left: -100px;
+    opacity: .2;
+    /* z-index: 12; NÃO HÁ NECESSIDADE */
+  }
+
+  to {
+    left: -110px;
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+
+@keyframes deslocamentoDir {
+
+  from {
+    left: 0;
+    z-index: 12;
+  }
+
+  25% {
+    left: 80px;
+    /* z-index: 12;  NÃO HÁ NECESSIDADE*/
+  }
+
+  50% {
+    left: 100px;
+    /* z-index: 12; NÃO HÁ NECESSIDADE*/
+    /* background-color: yellow;  Exemplo que dei no vídeo*/
+  }
+
+  to {
+    left: 110px;
+    z-index: -1;
+  }
+}
+
+
+/*ANIMAÇÃO CSS*/
+
+@keyframes slidein {
+
+  from {
+    left: 0;
+    width: 40%;
+  }
+
+  25% {
+    left: 5%;
+    width: 50%;
+  }
+
+  50% {
+    left: 25%;
+    width: 60%;
+  }
+
+  75% {
+    left: 45%;
+    width: 50%;
+  }
+
+  to {
+    left: 60%;
+    width: 40%;
+  }
+}
+
+@keyframes slideout {
+
+  from {
+    left: 60%;
+    width: 40%;
+  }
+
+  25% {
+    left: 45%;
+    width: 50%;
+  }
+
+  50% {
+    left: 25%;
+    width: 60%;
+  }
+
+  75% {
+    left: 5%;
+    width: 50%;
+  }
+
+  to {
+    left: 0;
+    width: 40%;
+  }
+}
+
+/*VERSÃO MOBILE*/
+@media screen and (max-width: 1040px) {
+  .content {
+    width: 100%;
+    height: 100%;
+  }
+
+  .content::before {
+    width: 100%;
+    height: 40%;
+    top: 0;
+    border-radius: 0;
+  }
+
+  .first-content,
+  .second-content {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .first-column,
+  .second-column {
+    width: 100%;
+  }
+
+  .sign-in-js .content::before {
+    top: 60%;
+    left: 0;
+    border-radius: 0;
+
+  }
+
+  .form {
+    width: 90%;
+  }
+
+  /* ANIMAÇÃO MOBILE CSS*/
+
+  @keyframes deslocamentoEsq {
+
+    from {
+      top: 0;
+      opacity: 1;
+      z-index: 12;
+    }
+
+    25% {
+      top: -80px;
+      opacity: .5;
+    }
+
+    50% {
+      top: -100px;
+      opacity: .2;
+    }
+
+    to {
+      top: -110px;
+      opacity: 0;
+      z-index: -1;
+    }
+  }
+
+
+  @keyframes deslocamentoDir {
+
+    from {
+      top: 0;
+      z-index: 12;
+    }
+
+    25% {
+      top: 80px;
+    }
+
+    50% {
+      top: 100px;
+    }
+
+    to {
+      top: 110px;
+      z-index: -1;
+    }
+  }
+
+
+
+  @keyframes slidein {
+
+    from {
+      top: 0;
+      height: 40%;
+    }
+
+    25% {
+      top: 5%;
+      height: 50%;
+    }
+
+    50% {
+      top: 25%;
+      height: 60%;
+    }
+
+    75% {
+      top: 45%;
+      height: 50%;
+    }
+
+    to {
+      top: 60%;
+      height: 40%;
+    }
+  }
+
+  @keyframes slideout {
+
+    from {
+      top: 60%;
+      height: 40%;
+    }
+
+    25% {
+      top: 45%;
+      height: 50%;
+    }
+
+    50% {
+      top: 25%;
+      height: 60%;
+    }
+
+    75% {
+      top: 5%;
+      height: 50%;
+    }
+
+    to {
+      top: 0;
+      height: 40%;
+    }
+  }
+
+}
+
+@media screen and (max-width: 740px) {
+  .form {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .form {
+    width: 100%;
+  }
+}
 
 #toggle {
   display: none;
@@ -487,6 +1021,10 @@ a .loginSymbol {
 
 .contactsPrincipal ul {
   list-style-type: none;
+}
+
+.contactsPrincipal li img {
+  width: 3rem;
 }
 
 .contactName,
@@ -886,30 +1424,30 @@ a .loginSymbol {
     z-index: 1;
     background: linear-gradient(90deg, hsla(0, 0%, 0%, 1) 28%, hsla(210, 10%, 25%, 1) 100%);
   }
-  
+
   .menu a {
     display: block;
     border-bottom: solid 1px #eaeaeb;
     margin: 0;
     padding: 0;
   }
-  
+
   .menu a:hover {
     color: #fff;
     background-color: #888;
     opacity: 50%;
   }
 
-    label[for="toggle"] {
+  label[for="toggle"] {
     display: block;
     cursor: pointer;
   }
 
-  .showLogin{
+  .showLogin {
     display: block;
   }
 
-  a .loginSymbol{
+  a .loginSymbol {
     display: none;
   }
 
@@ -1638,7 +2176,7 @@ a .loginSymbol {
     height: 7rem;
   }
 
-  .showLogin{
+  .showLogin {
     display: none;
   }
 
@@ -1867,8 +2405,8 @@ a .loginSymbol {
   .form-control textarea {
     height: 10rem;
   }
-  
-  .showLogin{
+
+  .showLogin {
     display: none;
   }
 
@@ -2047,8 +2585,8 @@ a .loginSymbol {
 /* Estilos para telas maiores, como monitores widescreen */
 @media (min-width: 1199.99px) {
 
-  
-  .showLogin{
+
+  .showLogin {
     display: none;
   }
 

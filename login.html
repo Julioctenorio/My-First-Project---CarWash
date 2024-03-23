@@ -8,11 +8,14 @@
   <link rel="stylesheet" href="./src/css/style.css">
   <!-- JavaScript Bundle with Popper -->
   <script src="./src/js/script.js" defer></script>
+  <script src="./src/js/app.js" defer></script>
+  <script src="https://kit.fontawesome.com/7480448000.js" crossorigin="anonymous"></script>
+
 
   <title>GL Contatos</title>
 </head>
 
-<body>
+<body class="sign-in-js">
   <header>
     <section id="header">
 
@@ -52,7 +55,101 @@
 
     <div id="loc-services"></div><br>
 
+    <div class="container">
+      <section class="content first-content">
+        <article class="first-column">
+          <h2 class="title title-primary">Bem vindo de volta!</h2>
+          <p class="description description-primary">Continue conectado conosco</p>
+          <p class="description description-primary">Faça login com suas informações pessoais</p>
+          <button id="signUp" class="btn btn-primary">Entrar</button>
+        </article>
+        <article class="second-column">
+          <h2 class="title title-secondary">Registre-se agora!</h2>
+          <div class="social-media">
+            <ul class="list-social-media">
+              <a class="link-social-media" href="#">
+                <li class="item-social-media">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </li>
+              </a>
+              <a class="link-social-media" href="#">
+                <li class="item-social-media">
+                  <i class="fa-brands fa-google"></i>
+                </li>
+              </a>
+              <a class="link-social-media" href="#">
+                <li class="item-social-media">
+                  <i class="fa-brands fa-apple fa-xl"></i>
+                </li>
+              </a>
+            </ul>
+          </div> <!--social media-->
+          <p class="desciption desciption-second">ou utilize o seu email para registro</p>
+          <form action="" class="formLogin">
+            <label class="label-input" for="">
+              <i class="fa-solid fa-user icon-modify"></i>
+              <input type="text" placeholder="Nome">
+            </label>
+            <label class="label-input" for="">
+              <i class="fa-solid fa-envelope icon-modify"></i>
+              <input type="email" placeholder="Email">
+            </label>
+            <label class="label-input" for="">
+              <i class="fa-solid fa-lock icon-modify"></i>
+              <input type="password" placeholder="Senha">
+            </label>
+            <button class="btn btn-second">Criar Conta</button>
+          </form>
+        </article> <!--second column-->
+      </section> <!--first content-->
+
+      <section class="content second-content">
+        <article class="first-column">
+          <h2 class="title title-primary">Ola, amigo!</h2>
+          <p class="description description-primary">Faça o registro com suas informações pessoais</p>
+          <p class="description description-primary">e inicie sua jornada conosco</p>
+          <button id="signIn" class="btn btn-primary">Criar Conta</button>
+        </article>
+        <article class="second-column">
+          <h2 class="title title-secondary">Iniciar sessão</h2>
+          <div class="social-media">
+            <ul class="list-social-media">
+              <a class="link-social-media" href="#">
+                <li class="item-social-media">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </li>
+              </a>
+              <a class="link-social-media" href="#">
+                <li class="item-social-media">
+                  <i class="fa-brands fa-google"></i>
+                </li>
+              </a>
+              <a class="link-social-media" href="#">
+                <li class="item-social-media">
+                  <i class="fa-brands fa-apple fa-xl"></i>
+                </li>
+              </a>
+            </ul>
+          </div> <!--social media-->
+          <p class="desciption desciption-second">ou utilize sua email</p>
+          <form action="" class="formLogin">
+            <label class="label-input" for="">
+              <i class="fa-solid fa-envelope icon-modify"></i>
+              <input type="email" placeholder="Email">
+            </label>
+            <label class="label-input" for="">
+              <i class="fa-solid fa-lock icon-modify"></i>
+              <input type="password" placeholder="Senha">
+            </label>
+            <a class="password" href="#">Esqueceu sua senha?</a>
+            <button class="btn btn-second">Entrar</button>
+          </form>
+        </article> <!--second column-->
+      </section> <!--second content-->
+    </div>
+
     <div class="logAndRegister">
+
       <div class="form">
         <form action="login">
           <h3>Iniciar sessão</h3>
@@ -67,7 +164,7 @@
             </article>
             <article id="login-button">
               <button type="submit">Entrar</button>
-            </article>            
+            </article>
             <section class="lostPassword">
               <a href="lostPassword">Esqueceu a senha?</a>
             </section>
